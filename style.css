@@ -1,0 +1,6 @@
+#container {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
