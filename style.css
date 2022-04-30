@@ -6,25 +6,17 @@
     display: inline-block;
     position: relative;
     margin: auto;
-    top: 0;
+    top: 0px;
     width: 100%;
     height: 100vh;
 }
 #statement {
     display: block;
     position: relative;
-<<<<<<< HEAD
-    margin: 0px;
-=======
     margin: auto;
->>>>>>> ed6ad99a2d20c13916d6a795e30bab81a41a3f11
     width: 100%;
     bottom: 0px; 
     justify-content: center;
     text-align: center;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-<<<<<<< HEAD
-
-=======
->>>>>>> ed6ad99a2d20c13916d6a795e30bab81a41a3f11
 }
