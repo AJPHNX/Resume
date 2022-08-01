@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/Self-Portrait.png">
+    <!-- <link rel="icon" href="./assets/Self-Portrait.png"> -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/Self-Portrait.png">
     <title>Resume</title>
+    <meta name="pinterest" content="nopin" />
 </head>
 <body>
     <div id="container">
+        <nav class="nav ">
+            <button class="trigger" id="subEarth">SubEarth (Browser Game)<br/>
+            <div class="buttonSubText">In progress </div>
+            </button>
+            <button class="trigger" id="nVentory">nVentory(Fullstack Mobile)
+                <div class="buttonSubText">beta </div>
+            </button>
+        </nav>
+
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <iframe src="" class="frame" id="projectFrame">
+                    Loading...
+                </iframe>
+            </div>
+        </div>
+
         <iframe src="./assets/ResumeSML.pdf" width="100%" height="800px">
         </iframe>
         <div id = "statement">
@@ -17,6 +37,7 @@
     </div>
    
 </body>
+<script src="index.js"></script>
 
 
 </html>
