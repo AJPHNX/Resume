@@ -7,10 +7,17 @@ const closeButton = document.querySelector(".close-button");
 
 const SubEarthURL =  "https://ajphnx.github.io/SubEarth/"
 const nVentoryURL = "https://nventory-frontend.herokuapp.com/"
+const afterClassURL = "./assets/AfterClass_Mockup_05_alt_logo.png"
+
 
 function changeSrc(loc) {
     document.getElementById('projectFrame').src = loc;
     console.log(`source changed to: ${loc}`)
+    // var div = document.getElementById("frameWrapp");
+    // div.onload = function() {
+    //     div.style.height =
+    //     div.contentWindow.document.body.scrollHeight + 'px';
+    // }
     toggleModal();
 }
 
@@ -31,6 +38,9 @@ function fillFrame(id){
           break;
         case "nVentory":
             changeSrc(nVentoryURL)
+            break;
+        case "afterClass":
+            changeSrc(afterClassURL)
           break;
     }
 }
@@ -39,10 +49,7 @@ triggers.forEach(trigger =>{
     trigger.addEventListener("click",function(e){
     console.log(trigger.id)
     fillFrame(trigger.id)
-   
     // fillFrame(e.target.id);
-
-    
     });
 });
 
