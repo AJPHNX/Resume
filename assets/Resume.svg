@@ -26,8 +26,8 @@
      inkscape:document-units="in"
      showgrid="false"
      inkscape:zoom="0.79166667"
-     inkscape:cx="1165.2632"
-     inkscape:cy="386.52632"
+     inkscape:cx="1048.421"
+     inkscape:cy="-10.105263"
      inkscape:window-width="1667"
      inkscape:window-height="997"
      inkscape:window-x="5"
@@ -615,7 +615,7 @@
      id="g26016"
      transform="translate(-301.00728,3.1031678)"
      inkscape:label="Grouped Text Layer"
-     style="display:inline">
+     style="display:none">
     <text
        x="318.72427"
        y="33.88678"
@@ -2069,20 +2069,6 @@
            id="tspan447" /></text>
     </g>
     <text
-       x="199.98685"
-       y="896.56427"
-       style="line-height:1.25;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-       xml:space="preserve"
-       id="text455"><tspan
-         x="199.98685"
-         y="896.56427"
-         fill="#00ff00"
-         font-family="Menlo"
-         font-size="12px"
-         stroke-width="0.41994"
-         style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-         id="tspan453">SQL</tspan></text>
-    <text
        x="198.77231"
        y="809.53394"
        style="line-height:1.25;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
@@ -2162,7 +2148,7 @@
          id="tspan479" /><tspan
          x="-249.4278"
          y="935.67102"
-         id="tspan481">postgreSQL</tspan></text>
+         id="tspan481">SQL/postgreSQL</tspan></text>
     <text
        transform="translate(448.74,-93.831)"
        x="-249.4278"
@@ -2828,7 +2814,7 @@
          id="text740"><tspan
            x="436.02328"
            y="902.92017"
-           id="tspan738">Active Listening:</tspan></text>
+           id="tspan738">+ Active Listening:</tspan></text>
       <g
          transform="translate(80,1.3107)"
          id="g754">
@@ -2894,7 +2880,7 @@
            x="435.60922"
            y="927.51221"
            style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-           id="tspan758">Management &amp; Leadership Skills: </tspan><tspan
+           id="tspan758">+ Management &amp; Leadership Skills: </tspan><tspan
            x="435.60922"
            y="947.51221"
            style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
@@ -2946,7 +2932,7 @@
       </g>
     </g>
     <g
-       transform="translate(0,37.422)"
+       transform="translate(0,35.422)"
        id="g796">
       <text
          x="435.36703"
@@ -2962,7 +2948,7 @@
            font-family="Menlo"
            font-size="12px"
            style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-           id="tspan778">Graphic Design:</tspan></text>
+           id="tspan778">+ Graphic Design:</tspan></text>
       <g
          transform="translate(80,66.598)"
          id="g794">
@@ -3014,7 +3000,7 @@
       </g>
     </g>
     <g
-       transform="translate(0,40)"
+       transform="translate(0,42)"
        id="g814">
       <text
          x="436.02328"
@@ -3030,7 +3016,7 @@
            font-family="Menlo"
            font-size="12px"
            style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-           id="tspan798">Attention to Detail:</tspan></text>
+           id="tspan798">+ Attention to Detail:</tspan></text>
       <g
          transform="translate(80,86.604)"
          fill="#00ff00"
@@ -3496,17 +3482,17 @@
        x="983.39319"
        y="136.86909"
        id="tspan8057"
-       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:12px;font-family:Futura;-inkscape-font-specification:'Futura, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000">-Aided in the restructuring and integration into a Harvest/Asana project management workflow</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:12px;font-family:Futura;-inkscape-font-specification:'Futura, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000">*Aided in the restructuring and integration into a Harvest/Asana project management workflow</tspan><tspan
        sodipodi:role="line"
        x="983.39319"
        y="151.86909"
        id="tspan6365"
-       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:12px;font-family:Futura;-inkscape-font-specification:'Futura, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000">-Drafted proposals for prospective clients.</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:12px;font-family:Futura;-inkscape-font-specification:'Futura, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000">*Drafted proposals for prospective clients.</tspan><tspan
        sodipodi:role="line"
        x="983.39319"
        y="166.86909"
        id="tspan6367"
-       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:12px;font-family:Futura;-inkscape-font-specification:'Futura, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000">Mockups, layouts and revisions for existing clients projects.</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:12px;font-family:Futura;-inkscape-font-specification:'Futura, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000">*Created mockups, layouts and revisions for existing clients projects.</tspan><tspan
        sodipodi:role="line"
        x="983.39319"
        y="181.86909"
@@ -3958,7 +3944,7 @@
      y="683.38715"
      id="text8101"><tspan
        sodipodi:role="line"
-       id="tspan8099"></tspan></text>
+       id="tspan8099" /></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:0.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
@@ -4106,7 +4092,7 @@
        sodipodi:role="line"
        id="tspan10688"
        x="1202.0044"
-       y="866.1109"></tspan><tspan
+       y="866.1109" /><tspan
        sodipodi:role="line"
        x="1202.0044"
        y="881.1109"

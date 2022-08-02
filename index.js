@@ -9,6 +9,9 @@ const SubEarthURL =  "https://ajphnx.github.io/SubEarth/"
 const nVentoryURL = "https://nventory-frontend.herokuapp.com/"
 const afterClassURL = "./assets/AfterClass_Mockup_05_alt_logo.png"
 
+function clearModal (){
+    document.getElementById('projectFrame').src = '';
+}
 
 function changeSrc(loc) {
     document.getElementById('projectFrame').src = loc;
@@ -47,8 +50,9 @@ function fillFrame(id){
 
 triggers.forEach(trigger =>{
     trigger.addEventListener("click",function(e){
-    console.log(trigger.id)
-    fillFrame(trigger.id)
+    console.log(trigger.id);
+    clearModal ();
+    fillFrame(trigger.id);
     // fillFrame(e.target.id);
     });
 });
