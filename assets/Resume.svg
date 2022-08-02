@@ -25,13 +25,13 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="in"
      showgrid="false"
-     inkscape:zoom="0.79166667"
-     inkscape:cx="1048.421"
-     inkscape:cy="-10.105263"
+     inkscape:zoom="1.3408856"
+     inkscape:cx="312.48005"
+     inkscape:cy="827.81112"
      inkscape:window-width="1667"
      inkscape:window-height="997"
-     inkscape:window-x="5"
-     inkscape:window-y="25"
+     inkscape:window-x="225"
+     inkscape:window-y="99"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg970"
      showguides="true">
@@ -59,6 +59,16 @@
        position="1576.7345,963.80013"
        orientation="0,-1"
        id="guide40260"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="140.95162,158.83173"
+       orientation="0,-1"
+       id="guide14041"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="668.2151,87.983034"
+       orientation="0,-1"
+       id="guide18900"
        inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
@@ -1938,7 +1948,26 @@
          stop-color="#000000"
          stroke-width="0.41994"
          style="line-height:1.25;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;-inkscape-stroke:none"
-         id="tspan415">MongoDB/Mongoose</tspan></text>
+         id="tspan415">Babel</tspan></text>
+    <text
+       transform="translate(-12.92475,38.785945)"
+       x="211.69371"
+       y="857.7384"
+       dominant-baseline="auto"
+       stop-color="#000000"
+       style="line-height:1.25;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;-inkscape-stroke:none"
+       xml:space="preserve"
+       id="text417-6"><tspan
+         x="211.69371"
+         y="857.7384"
+         dominant-baseline="auto"
+         fill="#00ff00"
+         font-family="Menlo"
+         font-size="12px"
+         stop-color="#000000"
+         stroke-width="0.41994"
+         style="line-height:1.25;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;-inkscape-stroke:none"
+         id="tspan415-0">MongoDB/Mongoose</tspan></text>
     <text
        x="47.762569"
        y="998.30804"
@@ -3008,7 +3037,7 @@
          fill="#00ff00"
          font-family="Menlo"
          font-size="16px"
-         style="line-height:1.25;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         style="line-height:1.25;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:none"
          xml:space="preserve"
          id="text800"><tspan
            x="436.02328"
@@ -3063,6 +3092,21 @@
            id="rect810" />
       </g>
     </g>
+    <text
+       x="434.91092"
+       y="1030.2366"
+       fill="#00ff00"
+       font-family="Menlo"
+       font-size="16px"
+       style="line-height:1.25;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline"
+       xml:space="preserve"
+       id="text780-0"><tspan
+         x="434.91092"
+         y="1030.2366"
+         font-family="Menlo"
+         font-size="12px"
+         style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan778-4">+ Attention to Detail</tspan></text>
   </g>
   <rect
      x="368.19"
