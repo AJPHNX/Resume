@@ -79,7 +79,7 @@
     width: 90vw;
     height: 90vh;
     border-radius: 0.5rem;
-    
+    background:url('./assets/Blue_loading_circle.gif') center center no-repeat;
 }
 
 
@@ -116,7 +116,7 @@
     height: 95%;
     overflow: none;
     background-color: #fff;
-    background:url('./assets/Blue_loading_circle.gif') center center no-repeat;
+    
     
 }
 /* .frameWrap{
