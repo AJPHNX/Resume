@@ -19,7 +19,7 @@
     {
         "id": 2 ,
         "name": "afterClass",
-        "url": "https://nventory-frontend.herokuapp.com/",
+        "url": "./assets/AfterClass_Mockup_05_alt_logo.png",
         "type": "Fullstack Platform",
         "description":"",
         "status": "Mockup",
@@ -37,7 +37,7 @@
     {
         "id": 3 ,
         "name": "nVentory",
-        "url": "./AfterClass_Mockup_05_alt_logo.png",
+        "url": "https://nventory-frontend.herokuapp.com/",
         "type": "Fullstack Mobile",
         "description":"Description: Fullstack PERN application utilizing microservices to handle front and back ends separately through an API/Mobile first design.",
         "status": "Beta",

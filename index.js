@@ -24,11 +24,6 @@ function clearModal (id){
 function changeSrc(loc) {
     document.getElementById('projectFrame').src = loc;
     console.log(`source changed to: ${loc}`)
-    // var div = document.getElementById("frameWrapp");
-    // div.onload = function() {
-    //     div.style.height =
-    //     div.contentWindow.document.body.scrollHeight + 'px';
-    // }
     toggleModal();
 }
 
@@ -46,16 +41,16 @@ function windowOnClick(event) {
 }
 
 function fillFrame(name){
+    clearModal ('projectFrame');
     switch(name) {
         case "subEarth":
-            changeSrc(SubEarthURL)
-
+            changeSrc(currentInfo.url)
           break;
         case "nVentory":
-            changeSrc(nVentoryURL)
+            changeSrc(currentInfo.url)
             break;
         case "afterClass":
-            changeSrc(afterClassURL)
+            changeSrc(currentInfo.url)
           break;
     }
     fillInfo(name);
@@ -64,12 +59,7 @@ function fillFrame(name){
 async function fetchInfo(){
     const response = await fetch('./assets/Projects.json')
     const data = await response.json()
-    projects = data.projects
-    // projects.forEach(project => {
-        
-    //     console.log(project.name,': ', project.description)
-    // })
-    // document.getElementById('infoWrap').textContent = name;
+    projects = data.projects 
 }
 // Fill json info based on selected project button
 function fillInfo(name){
@@ -78,14 +68,22 @@ function fillInfo(name){
             project.name === name
         )
     })
-    console.log(currentInfo)
+    let inspText = document.getElementById('inspiration')
+    let impText= document.getElementById('implementation')
+    let lessText= document.getElementById('lessons')
+
+    inspText.innerHTML=currentInfo.info.inspiration
+    impText.innerHTML=currentInfo.info.implementation
+    lessText.innerHTML=currentInfo.info.lessons
+
+    // console.log(currentInfo)
+    // infoBox.innerHTML=`<p>${currentInfo}</p> `
 }
 triggers.forEach(trigger =>{    
     trigger.addEventListener("click",function(e){
     console.log(trigger.id);
     clearModal ('projectFrame');
     fillFrame(trigger.id);
-    // fillFrame(e.target.id);
     });
 });
 // infoTriggers.addEventListener("click",toggleInfoModal)
