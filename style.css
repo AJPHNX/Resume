@@ -115,15 +115,96 @@
     width: 100%;
     height: 95%;
     overflow: none;
+    background-color: #fff;   
+}
+.infoButton{
+    width: fit-content;
+    height: fit-content;
+    /* z-index: 999; */
+    position: relative;
+    top: 0px;
+    left: 145px;   
+    border: none;
+    opacity: .4;
+    border-radius: 80% 80%;
+    /* border: 1px solid blue; */
+}
+
+.infoButton:hover {
+    opacity: .6;
+}
+.infoButton img{
+    background-color: rgba(255, 255, 255, 0);
+    /* background-color: blue; */
+}
+.trigger{
+    z-index: 998;
+}
+/*************
+Info Modal
+*****************/
+.infoModal {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    /* z-index: 100; */
+    padding-top: 1em;
+}
+
+.infoModal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    /* width: 24rem; */
+    width: 90vw;
+    height: 90vh;
+    border-radius: 0.5rem;
+    background:url('./assets/Blue_loading_circle.gif') center center no-repeat;
+}
+
+.infoClose-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
     background-color: #fff;
-    
+    border-color: #868686;
+    padding-bottom: .25em;
+    color: #868686;
     
 }
-/* .frameWrap{
-    width: auto;
-    height: 100%;
+
+.infoClose-button:hover {
+    border-color: #868686;
+    background-color: #868686;
+    color: #fff;
     
-} */
-.trigger{
-    z-index: 999;
+}
+.show-infoModal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.infoModal content{
+    transform: scale(.50);
+}
+.actualInfo{
+        position: relative;
+        width: 100%;
+        height: 95%;
+        overflow: none;
+        background-color: #fff;   
 }

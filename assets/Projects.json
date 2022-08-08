@@ -1,0 +1,53 @@
+{"projects":[
+    {   "id": 1 ,
+        "name": "subEarth",
+        "url": "https://ajphnx.github.io/SubEarth/",
+        "type": "Browser Game",
+        "description": "Browser based Game",
+        "status": "In progress",
+        "info":{
+           "inspiration":"This initial module of SubEarth is based on my work experience with the slicer at Jersey Mike’s Subs. Alongside making the sandwiches correctly, the goal is to handle the cue as optimally as possible by preloading it, and slicing as many of the like-sandwich components as you can, at the same time.",
+           "implementation":[
+               "A training system with immediate rewards based in stimuli and relatability (further solidifying a more enjoyable angle on the experience, triggered by notions of personal growth and gains)",
+                "A passive marketing tool that implements an enjoyable call to action, that can potentially yield/be paired with rewards and benefits.(w3-ish in nature) ",
+                "Away to kill some time making a bunch of sandwiches without...yah know…having to figure out what to do with them afterwards…A…low-impact sandwich construction outlet🤔🧐"
+            ],
+           "lessons":"Upon undertaking this project, I had the opportunity to explore and combine many of the learned skills from the first portion of my bootcamp up until Javascript. Although not complete(due to its ambitious nature for the time allotted), I still had the opportunity to utilize aspects of the AGILE process when coming to the point that it’s be more beneficial to refactor my code for the results I’m looking to achieve(which I am in the process of in between projects). After observing what data was needing to be handled and how, it became apparent that there was not just a dryer but more effective way to structure/handle the data and its interactions(state and effects)",
+           "reviews":""
+        }
+    },
+    {
+        "id": 2 ,
+        "name": "afterClass",
+        "url": "https://nventory-frontend.herokuapp.com/",
+        "type": "Fullstack Platform",
+        "description":"",
+        "status": "Mockup",
+        "info":{
+           "inspiration": "While going through my fullstack bootcamp, there was a strong emphasis placed on the demand within the field, while still addressing the competitive nature as well. Another point shared was how important your cohort is in your continued growth, progress and sense of community etc..." ,
+          
+           "implementation":[
+            "Exploratory breeding space for industry changing technologies straight from the pulse.",
+             "Shift the goal from focusing your growth on just pursuing 'big company'(because it's one of the few frames of reference in the field) to, pursuing meaningful projects that resonate with the direction an individual wants to move in, while showing continued professional and collaborative growth."
+            ],
+           "lessons":"Time is what it is...I initially wanted to pitch the project to my cohort in hopes of being able to create that space out of its own necessity and ability. Make the cool that can help others make the cool things.",
+           "reviews":""
+        }
+    },
+    {
+        "id": 3 ,
+        "name": "nVentory",
+        "url": "./AfterClass_Mockup_05_alt_logo.png",
+        "type": "Fullstack Mobile",
+        "description":"Description: Fullstack PERN application utilizing microservices to handle front and back ends separately through an API/Mobile first design.",
+        "status": "Beta",
+        "info":{
+           "inspiration":"This application was thought of while working at a Shopify-based brick and mortar wine store which. The slow and sometimes distracted process of organizing the space available inspired AJ to build a cleaner and easier system for tracking inventory.",
+           "implementation":[
+            "A visual bridge that allows the user to break their inventory up into personalized sections and subsections, allowing for a more manageable and streamlined inventory process and interaction.",
+            "Allows shopify to stay on the computer/POS while you manage your inventory as it sits in your physical store via phone, tablet, or laptop."],
+           "lessons":"A great experience with a strong team of 4(total) with a little under 2 weeks of class time, in our first collaborative effort/ full stack application. Throughout the project we implemented  AGILE/Scrum methodologies while holding true to our established MVP and adding possible  features in the allotted time. The main focus of our MVP was to ensure we were covering all the C.R.U.D. functionalities; rendering it fullstack, while still displaying some of the other intended features and functionalities of the user experience.",
+           "reviews":""
+        }
+    }
+]}
