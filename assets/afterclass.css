@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.image-div{
+    display: flex;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+}
