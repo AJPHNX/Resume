@@ -25,33 +25,33 @@
         </nav>
 
         <div class="modal">
-            <!-- <div class="infoModal" id ="infoModal"> -->
-                
-                <div class="infoTrigger infoButton" id="infoButton">
-                    <img src="./assets/infoButton.png" height ="50px" width ="50px" > </img>
-                </div> 
-               <div class="infoModal">
+            <!-- <div class="infoModal" id ="infoModal"> -->   
+            <!-- </div>   -->
+            <div class="modal-content">
+
+                <button class="infoTrigger infoButton blink" id="infoButton">
+                    <img src="./assets/infoButton.png" height ="50px" width ="50px" alt="info"> </img>
+                </button > 
+
+               <div class="infoModal show-infoModal">
                 <span class="infoClose-button">&times;</span>
                     <div class="infoModal-content">
-                        <span class="infoClose-button">&times;</span>
                            <div class="actualInfo" id ="actualInfo">
-                                <h3>Inspiration</h3> 
-                                <p id="inspiration"> </p>
-                                <h3>Implementation</h3> 
-                                <p id="implementation"> </p>
-                                <h3>Lessons</h3> 
-                                <p id="lessons"> </p>
+                                <h2><u>Info</u></h2> <br>
 
+                                <h3><u>Inspiration:</u></h3> 
+                                <p id="inspiration"> </p>
+                                <h3><u>Implementation:</u></h3> 
+                                <p id="implementation"> </p>
+                                <h3><u>Lessons:</u></h3> 
+                                <p id="lessons"> </p>
                             </div>
                     </div>
                 </div>  
-               
-            <!-- </div>   -->
-            
-            <div class="modal-content">
-                
                 <span class="close-button">&times;</span>
+                <div class="frame-container">
                     <iframe src="" class="frame responsive-iframe" id="projectFrame"> </iframe>
+                </div>
             </div>
         </div>
 

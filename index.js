@@ -3,7 +3,7 @@
 const modal = document.querySelector(".modal");
 const infoModal = document.querySelector(".infoModal");
 const triggers = document.querySelectorAll(".trigger");
-const infoTrigger = document.getElementById(".infoButton");
+const infoButton = document.getElementById("infoButton");
 // const trigger2 = document.querySelectorAll(".trigger2");
 const closeButton = document.querySelector(".close-button");
 const infoCloseButton = document.querySelector(".infoClose-button");
@@ -34,10 +34,11 @@ function changeSrc(loc) {
 
 function toggleModal() {
     modal.classList.toggle("show-modal");
-    infoTrigger.classList.toggle('show-infoButton')
+    infoButton.classList.toggle('show-infoButton')
 }
 function toggleInfoModal() {
     infoModal.classList.toggle("show-infoModal");
+    console.log("window modal???")
 }
 
 function windowOnClick(event) {
@@ -46,6 +47,10 @@ function windowOnClick(event) {
         currentInfo = []
         // toggleInfoModal();
     }
+}
+
+function modalCheck(){
+    
 }
 
 function fillFrame(name){
@@ -102,8 +107,11 @@ triggers.forEach(trigger =>{
     });
 });
 
-// infoTrigger.addEventListener("click",toggleInfoModal);
+// 
 closeButton.addEventListener("click", toggleModal);
-// infoCloseButton.addEventListener("click", toggleInfoModal);
+infoCloseButton.addEventListener("click", toggleInfoModal);
+infoButton.addEventListener("click",()=>{
+    toggleInfoModal();
+});
 window.addEventListener("load",fetchInfo)
 window.addEventListener("click", windowOnClick);
