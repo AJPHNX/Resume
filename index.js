@@ -3,7 +3,7 @@
 const modal = document.querySelector(".modal");
 const infoModal = document.querySelector(".infoModal");
 const triggers = document.querySelectorAll(".trigger");
-const infoTriggers = document.querySelectorAll(".infoTrigger");
+const infoTrigger = document.getElementById(".infoButton");
 // const trigger2 = document.querySelectorAll(".trigger2");
 const closeButton = document.querySelector(".close-button");
 const infoCloseButton = document.querySelector(".infoClose-button");
@@ -18,32 +18,47 @@ const afterClassURL = "./assets/AfterClass_Mockup_05_alt_logo.png"
 
 
 function clearModal (id){
-    document.getElementById(id).src = '';
+    // currentInfo = {}
+    document.getElementById(id).src = './assets/Blue_loading_cirlce.gif';
+    
 }
 
 function changeSrc(loc) {
-    document.getElementById('projectFrame').src = loc;
-    console.log(`source changed to: ${loc}`)
-    toggleModal();
+    clearModal('projectFrame')
+    if(loc){
+        document.getElementById('projectFrame').src = loc;
+        console.log(`source changed to: ${loc}`)
+        toggleModal();
+    }
 }
 
 function toggleModal() {
     modal.classList.toggle("show-modal");
+    infoTrigger.classList.toggle('show-infoButton')
 }
 function toggleInfoModal() {
-    modal.classList.toggle("show-InfoModal");
+    infoModal.classList.toggle("show-infoModal");
 }
 
 function windowOnClick(event) {
     if (event.target === modal) {
         toggleModal();
+        currentInfo = []
+        // toggleInfoModal();
     }
 }
 
 function fillFrame(name){
-    clearModal ('projectFrame');
+    // clearModal ('projectFrame');
+    currentInfo = projects.find(project =>{
+        return (
+            project.name === name
+        )
+    })
+    console.log('Changing Sources Name To: '+ name)
     switch(name) {
         case "subEarth":
+            console.log('Changing URL To: '+ currentInfo.url)
             changeSrc(currentInfo.url)
           break;
         case "nVentory":
@@ -72,21 +87,22 @@ function fillInfo(name){
     let impText= document.getElementById('implementation')
     let lessText= document.getElementById('lessons')
 
-    inspText.innerHTML=currentInfo.info.inspiration
-    impText.innerHTML=currentInfo.info.implementation
-    lessText.innerHTML=currentInfo.info.lessons
+    inspText.textContent=currentInfo.info.inspiration
+    impText.textContent=currentInfo.info.implementation
+    lessText.textContent=currentInfo.info.lessons
 
     // console.log(currentInfo)
     // infoBox.innerHTML=`<p>${currentInfo}</p> `
 }
 triggers.forEach(trigger =>{    
     trigger.addEventListener("click",function(e){
-    console.log(trigger.id);
-    clearModal ('projectFrame');
-    fillFrame(trigger.id);
+    console.log("triggering: "+this.id);
+    // clearModal ('projectFrame');
+    fillFrame(this.id);
     });
 });
-// infoTriggers.addEventListener("click",toggleInfoModal)
+
+// infoTrigger.addEventListener("click",toggleInfoModal);
 closeButton.addEventListener("click", toggleModal);
 // infoCloseButton.addEventListener("click", toggleInfoModal);
 window.addEventListener("load",fetchInfo)

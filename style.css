@@ -26,12 +26,16 @@
 }
 .nav{
     /* position: absolute; */
-    display:  fixed;
+    
+    /* display:  fixed; */
+    display: flex;
+    overflow-x: scroll;
+    /* overflow-y: hidden; */
     justify-content: center;
     align-items: center;
     height: 7vh;
     background-color:#fff;
-    padding: 1em;
+    padding: 2em 2em;
     margin-bottom: 2em;
 }
 
@@ -40,6 +44,7 @@
     border-radius: 20px 20px 20px 20px;
     background-color: #fff;
     border: 2px solid #868686; 
+    min-width: 400px;
     margin: .5em;
     color: #868686;
     text-decoration: none;
@@ -136,25 +141,28 @@
 .infoButton{
     width: fit-content;
     height: fit-content;
-    /* z-index: 999; */
+    z-index: 999;
     position: relative;
-    top: 0px;
-    left: 145px;   
+    top: 40vh;
+    left: 145px; 
+    visibility: hidden;  
     border: none;
     opacity: .4;
     border-radius: 80% 80%;
     /* border: 1px solid blue; */
 }
-
+.show-infoButton{
+    visibility: visible;
+}
 .infoButton:hover {
     opacity: .6;
-}
+}   
 .infoButton img{
     background-color: rgba(255, 255, 255, 0);
     /* background-color: blue; */
 }
 .trigger{
-    z-index: 998;
+    /* z-index: 998; */
 }
 /*************
 Info Modal
@@ -167,11 +175,13 @@ Info Modal
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    visibility: hidden;
+    /* visibility: hidden; */
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
     /* z-index: 100; */
     padding-top: 1em;
+    /* display: hidden; */
+    overflow: scroll;
 }
 
 .infoModal-content {
@@ -181,22 +191,24 @@ Info Modal
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 1rem 1.5rem;
-    /* width: 24rem; */
+    width: 24rem; 
     width: 90vw;
     height: 90vh;
     border-radius: 0.5rem;
     background:url('./assets/Blue_loading_circle.gif') center center no-repeat;
+    overflow: scroll;
 }
 
 .infoClose-button {
+    position: relative;
     float: right;
     width: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
-    background-color: #fff;
-    border-color: #868686;
+    /* background-color: blue; */
+    /* border-color: blue; */
     padding-bottom: .25em;
     color: #868686;
     
@@ -215,7 +227,7 @@ Info Modal
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 .infoModal content{
-    transform: scale(.50);
+    /* transform: scale(.50); */
 }
 .actualInfo{
        
