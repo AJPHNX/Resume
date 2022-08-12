@@ -88,13 +88,15 @@ function fillInfo(name){
             project.name === name
         )
     })
+    let infoName = document.getElementById('infoName')
     let inspText = document.getElementById('inspiration')
     let impText= document.getElementById('implementation')
     let lessText= document.getElementById('lessons')
 
-    inspText.textContent=currentInfo.info.inspiration
-    impText.textContent=currentInfo.info.implementation
-    lessText.textContent=currentInfo.info.lessons
+    infoName.textContent = `"${currentInfo.name}"`
+    inspText.textContent = currentInfo.info.inspiration
+    impText.textContent = currentInfo.info.implementation
+    lessText.textContent = currentInfo.info.lessons
 
     // console.log(currentInfo)
     // infoBox.innerHTML=`<p>${currentInfo}</p> `
