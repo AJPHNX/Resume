@@ -8,7 +8,11 @@ const infoButton = document.getElementById("infoButton");
 const closeButton = document.querySelector(".close-button");
 const infoCloseButton = document.querySelector(".infoClose-button");
 
-let infoName = document.getElementById('infoName')
+let projName = document.getElementById('projName')
+let projStatus = document.getElementById('status')
+let projDesc = document.getElementById('description')
+let projRepo = document.getElementById('repo')
+
 let inspText = document.getElementById('inspiration')
 let impText = document.getElementById('implementation')
 let lessText = document.getElementById('lessons')
@@ -32,6 +36,7 @@ function clearModal (id){
 function changeSrc(loc) {
     clearModal('projectFrame')
     clearImps(impText)
+    clearImps(projRepo)
     if(loc){
         document.getElementById('projectFrame').src = loc;
         console.log(`source changed to: ${loc}`)
@@ -91,6 +96,7 @@ async function fetchInfo(){
 }
 function clearImps(tar){  
    return tar.innerHTML = "";
+   
 }
 // Fill json info based on selected project button
 function fillInfo(name){
@@ -100,14 +106,23 @@ function fillInfo(name){
         )
     })
     
-
-    infoName.textContent = `"${currentInfo.name}"`
+    projName.textContent = `"${currentInfo.name}"`
+    projStatus.textContent = currentInfo.status;
+    projDesc.textContent = currentInfo.description;
     inspText.innerHTML = currentInfo.info.inspiration
 
     currentInfo.info.implementation.map(imp=>{
         impText.innerHTML += `<li>  ${imp}  </li>`;
     })
     lessText.textContent = currentInfo.info.lessons
+    let i = 0;
+    currentInfo.repo.map(repo=>{
+        projRepo.innerHTML += ` <a href="${currentInfo.repo[i].link}"target="_blank"> ${currentInfo.repo[i].title} </a> <br>`;
+        console.log(projRepo.innerHTML)
+        console.log(currentInfo.repo[i])
+        i++;
+        // console.log(currentInfo.repo[repo].title)
+    });
 }
 triggers.forEach(trigger =>{    
     trigger.addEventListener("click",function(e){

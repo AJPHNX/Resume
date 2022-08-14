@@ -218,8 +218,14 @@ Info Modal
     display: hidden;
     overflow: scroll;
 }
-
+.closeWrapper{
+    display: flex;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
 .infoModal-content {
+    /* position: absolute; */
     width: 90vw;
     height: 90vh;
     border-radius: 0.5rem;
@@ -227,9 +233,9 @@ Info Modal
 }
 
 .infoClose-button {
-    position: relative;
-    top: -18px;
-    left: -18px;
+    position: absolute;
+    top: 1.5em; 
+    left: 14em; 
     width: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
@@ -264,7 +270,7 @@ Info Modal
         height: 60vh;
         margin: auto;
         top: 10%;
-        border: 7px dashed rgb(96, 227, 253); 
+        border: .5em dashed rgb(96, 227, 253); 
         z-index: 1001;
         overflow: scroll;
         background-color: rgba(255, 255, 255, 0.93); 
@@ -282,19 +288,27 @@ Info Modal
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 1px rgb(96, 227, 253);
 } 
+.infoHeader h2{
+    /* color: rgb(255, 255, 255); */
+    -webkit-text-stroke: 1px rgb(81, 81, 81);
+    /* background-color: #fff; */
+    width:100%;
+} 
 .infoHeader{
     display: flex;
     justify-content: center;
     flex-direction: column;
     /* position: fixed; */
     /* top: 0; */
-    /* padding: 5px; */
+    padding-top: -2em;
+    padding-bottom: 1em;
     height: fit-content;
     width: 100%;
     border-radius: 0px 40px 0px 0px;
     background-color:rgb(218, 246, 251);
     border: 2px solid rgb(96, 227, 253); 
     box-shadow: 2px 2px 10px 5px rgba(119, 126, 142, 0.485);
+    align-items:center;
 }
 h3{
     color:rgb(0, 0, 0);
@@ -305,7 +319,18 @@ ol{
     width: 70%;
 }
 
+ a{
+    text-decoration: none;
+    color:#868686;
+}
+a:hover{
+    text-decoration: underline;
+}
 li{
     text-align: center;
     padding: 5px;
+}
+#description{
+    margin: auto;
+    width: 70%;
 }

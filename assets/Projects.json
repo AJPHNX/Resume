@@ -3,8 +3,11 @@
         "name": "subEarth",
         "url": "https://ajphnx.github.io/SubEarth/",
         "type": "Browser Game",
-        "description": "Browser based Game",
+        "description": "Browser-based Game",
         "status": "In progress",
+        "repo": [{
+            "title": "Progress",
+            "link":"https://github.com/AJPHNX/SubEarth"}],
         "info":{
            "inspiration":"This initial module of SubEarth is based on my work experience with the slicer at Jersey Mike’s Subs. Alongside making the sandwiches correctly, the goal is to handle the cue as optimally as possible by preloading it, and slicing as many of the like-sandwich components as you can, at the same time.",
            "implementation":[
@@ -21,8 +24,9 @@
         "name": "afterClass",
         "url": "./assets/afterclass.html",
         "type": "Fullstack Platform",
-        "description":"",
+        "description":"FullStack Platform Mockup",
         "status": "Mockup",
+        "repo": ["N/A"],
         "info":{
            "inspiration": "While going through my fullstack bootcamp, there was a strong emphasis placed on the demand within the field, while still addressing the competitive nature as well. Another point shared was how important your cohort is in your continued growth, progress and sense of community.<br><br> Upon processing this information and poking around the Linkedins of some of my cohort-mates, I grew to see how eclectic their professional backgrounds and previous experiences were. Knowing we were all in this shared experience to further ourselves through this (possibly) new skill-set, I began to think how beneficial a space to approach projects based on what sparks our coding interests, and what we had to offer from previously established knowledge bases (ie. soft skills and industry awareness).<br><br>So, we have an array of skill-sets and drive but, not everyone has an idea just jumping out in the directions they’d like to explore. With the aid of filtered feeds based on preferences, one can create, browse, collaborate and/or follow projects and cohorts/clans of interest as they further their skill-sets solidifying their working knowledge in an environment designed to bridge the gap between learning, doing, and being." ,
           
@@ -39,8 +43,16 @@
         "name": "nVentory",
         "url": "https://nventory-frontend.herokuapp.com/",
         "type": "Fullstack Mobile",
-        "description":"Description: Fullstack PERN application utilizing microservices to handle front and back ends separately through an API/Mobile first design.",
+        "description":"Fullstack PERN application utilizing microservices to handle front and back ends separately through an API/Mobile first design.",
         "status": "Beta",
+        "repo": [{
+            "title": "Frontend",
+            "link":"https://github.com/kiqueangulo/nVentory-frontend/"},
+
+            {"title": "Backend",
+            "link":"https://github.com/kiqueangulo/nVentory-backend/"
+            }
+            ],
         "info":{
            "inspiration":"This application was thought of while working at a Shopify-based brick and mortar wine store which. The slow and sometimes distracted process of organizing the space available inspired AJ to build a cleaner and easier system for tracking inventory.",
            "implementation":[
