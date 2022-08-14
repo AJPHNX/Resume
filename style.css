@@ -29,26 +29,26 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     text-align: center;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-size: 1em;
-    color: rgb(255, 255, 255);
+    color: #5a5959;
     /* background-color:rgb(34, 40, 40); */
     /* background-color:#868686; */
-    background: rgb(134,134,134);
+    /* background: rgb(134,134,134);
     background: repeating-linear-gradient( 45deg,
         #868686,
         #868686 5px,
         #465298 5px,
         rgb( 96, 227, 253) 10px
         );
-    opacity: .75;
+    opacity: .75; */
     /* background: linear-gradient(-180deg, rgba(134,134,134,1) 0%, rgba(255,255,255,0) 100%); */
-    text-shadow: 2px 2px 5px rgb(10, 10, 10);
+    /* text-shadow: 2px 2px 5px rgb(10, 10, 10); */
     margin-bottom: .5em;
     padding-bottom: 2em;
     z-index:0;
     overflow-x: scroll;
     overflow-y: none;
     border-radius: 0px 40px 0px 40px;
-    box-shadow: inset 2px 2px 10px 2px #242527;
+    /* box-shadow: inset 2px 2px 10px 2px #242527; */
     
 }
 .nav{
