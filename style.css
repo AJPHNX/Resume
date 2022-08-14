@@ -7,7 +7,8 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     padding: 0px;
 }
 #container {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     position: relative;
     margin: auto;
     top: 0px;
@@ -17,30 +18,43 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
 
 }
 #statement {
-    display: block;
+    display: flex;
     position: relative;
     margin: auto;
     width: 100%;
-    bottom: 0px; 
+    height: 4em;
+    top: 0px; 
     justify-content: center;
+    align-content: center;
     text-align: center;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-size: 1em;
-    color: #706f6f;
+    color: rgb(255, 255, 255);
+    /* background-color:rgb(34, 40, 40); */
+    /* background-color:#868686; */
+    background: rgb(134,134,134);
+    /* background: linear-gradient(-180deg, rgba(134,134,134,1) 0%, rgba(255,255,255,0) 100%); */
+    text-shadow: 2px 2px rgb(85, 117, 124);
+    margin-bottom: .5em;
+    z-index:0;
+    /* border-radius: 0px 40px 0px 40px; */
+    box-shadow: inset 2px 2px 5px 2px #71757a;
+    
 }
 .nav{
     /* position: absolute; */
-    
     /* display:  fixed; */
     display: flex;
     overflow-x: scroll;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
     justify-content: center;
     align-items: center;
-    height: 7vh;
+    height: 10em;
     background-color:#fff;
-    padding: 2em 2em;
-    margin-bottom: 2em;
+    padding: 1em 2em;
+    /* margin: 4em 2em;  */
+    /* margin-bottom: 2em; */
+    z-index: 950;
 }
 
 .nav button{
@@ -54,6 +68,7 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     text-decoration: none;
     font-size: 1.5em;
     cursor: pointer;
+    z-index:19;
 }
 .buttonSubText {
     font-size: .75em;
@@ -63,6 +78,18 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     color: #ffffff;
     box-shadow: -8px -6px 15px -10px rgba(0, 0, 0, 0.498);/* , inset -13px -14px 7px -4px rgba(255, 255, 255, 0.574); */
 }
+.poweredBy{
+    display: flex;
+    flex-direction: row;
+    color: #868686;
+    padding-top: 2em;
+}
+#resumeWrap {
+    z-index: 80;
+    border: 2px dotted blue;
+    overflow: hidden;
+    min-height: fit-content;
+}
 .modal {
     position: fixed;
     left: 0;
@@ -71,7 +98,8 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
     z-index: 99;
@@ -121,7 +149,8 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
 }
 .show-modal {
     opacity: 1;
-    visibility: visible;
+    /* visibility: visible; */
+    display: inherit;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
@@ -213,7 +242,7 @@ Info Modal
     visibility: hidden;
     /* transform: scale(1.1); */
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    z-index: 100;
+    z-index: 995;
     padding-top: 1em;
     display: hidden;
     overflow: scroll;
@@ -279,7 +308,10 @@ Info Modal
         padding: 1em;
         box-shadow: 2px 2px 20px 5px rgb(129, 149, 195);
     }
-
+/* .format{
+    display: flex;
+    flex-direction: row;
+} */
 .actualInfo h1,h2,h3,p{
     text-align: center;
 }
@@ -291,7 +323,8 @@ Info Modal
 } 
 .infoHeader h2{
     /* color: rgb(255, 255, 255); */
-    -webkit-text-stroke: 1px rgb(81, 81, 81);
+    /* -webkit-text-stroke: 1px rgb(81, 81, 81); */
+    text-shadow: 1px 1px  rgb(81, 81, 81);
     /* background-color: #fff; */
     width:100%;
 } 
