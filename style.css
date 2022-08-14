@@ -91,8 +91,10 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
 .poweredBy{
     display: flex;
     flex-direction: row;
+    width: 50%;
     color: #868686;
-    padding-top: 2em;
+    /* padding-top: 2em; */
+    border-top: .5px solid #868686;
 }
 #resumeWrap {
     z-index: 80;
@@ -102,6 +104,8 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
 }
 .modal {
     position: fixed;
+    /* display: flex; */
+    /* flex-direction: column; */
     left: 0;
     top: 0;
     width: 100%;
@@ -117,15 +121,30 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     /* border: 2px dotted blue; */
     /* background: url('./assets/Blue_loading_circle.gif') center center no-repeat; */
 }
+.modalTop{
+    background-color: #000;
+    color: #fff;
+    width: 15%;
+    min-width: fit-content;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    left: 42.5%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
 
 .modal-content {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    padding: 1rem 1.5rem;
-    /* width: 24rem; */
+    padding: 1em 1.5em;
+    /* margin-top: 2em; */
     width: 90vw;
     height: 80vh;
     min-width: 650px;
