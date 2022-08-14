@@ -1,4 +1,4 @@
-h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 34px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
 
 
 
@@ -127,7 +127,6 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; fo
 }
 
 .frame-container {
-    /* position: relative; */
     display: flex;
     align-content: center;
     justify-content: center;
@@ -135,9 +134,8 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; fo
     min-width: fit-content;
     min-height: fit-content;
     overflow: none;
-    /* background-color: #fff;   */
-    /* border: 2px dotted blue; */
 }
+
 .responsive-iframe {
     position: absolute;
     top: 0;
@@ -151,15 +149,10 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; fo
     border-radius: 0px 40px 0px 40px;
 }
 .infoButton{
-    /* width: fit-content; */
-    /* height: fit-content; */
     z-index: 999;
     position: absolute;
     right: 0px;
     bottom: 0px;
-    /* top: 40vh; */
-    /* left: 145px;  */
-    /* visibility: hidden;   */
     justify-content: center;
     margin: auto;
     border: none;
@@ -168,8 +161,8 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; fo
     z-index: 999;
     cursor: pointer;
     margin: 5px;
-    /* border: 1px solid blue; */
 }
+
 .show-infoButton{
     visibility: visible;
 }
@@ -227,41 +220,32 @@ Info Modal
 }
 
 .infoModal-content {
-    /* position: relative; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* background-color: rgba(40, 39, 39, 0.546); */
-    /* border: 2px dotted blue; */
-    /* padding: 1rem 1.5rem; */
-    /* width: 24rem;  */
     width: 90vw;
     height: 90vh;
     border-radius: 0.5rem;
-    /* background:url('./assets/Blue_loading_circle.gif') center center no-repeat; */
     overflow: scroll;
 }
 
 .infoClose-button {
-    position: absolute;
-    /* top: 4px; */
-    /* left: 99px; */
+    position: relative;
+    top: -18px;
+    left: -18px;
     width: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
     cursor: pointer;
     border-radius: 80%;
     padding: .25rem;
-    /* padding-bottom: .25em; */
     color: #fff;
     background-color:#9f9f9f;
+    border: 2px solid #868686;
     box-shadow: 1px 1px 5px 1px rgb(96, 96, 96);
 }
 
 .infoClose-button:hover {
     border-color: #000;
     background-color: #868686;
-    color: #fff;   
+    color: #000;   
 }
 
 .show-infoModal {
@@ -280,7 +264,7 @@ Info Modal
         height: 60vh;
         margin: auto;
         top: 10%;
-        border: 5px dashed rgb(96, 227, 253); 
+        border: 7px dashed rgb(96, 227, 253); 
         z-index: 1001;
         overflow: scroll;
         background-color: rgba(255, 255, 255, 0.93); 
@@ -314,4 +298,14 @@ Info Modal
 }
 h3{
     color:rgb(0, 0, 0);
+}
+ol{
+    margin: auto;
+    padding: 5px;
+    width: 70%;
+}
+
+li{
+    text-align: center;
+    padding: 5px;
 }

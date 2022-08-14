@@ -7,6 +7,12 @@ const infoButton = document.getElementById("infoButton");
 // const trigger2 = document.querySelectorAll(".trigger2");
 const closeButton = document.querySelector(".close-button");
 const infoCloseButton = document.querySelector(".infoClose-button");
+
+let infoName = document.getElementById('infoName')
+let inspText = document.getElementById('inspiration')
+let impText = document.getElementById('implementation')
+let lessText = document.getElementById('lessons')
+let impArray = []
 let projects = []
 let currentInfo = {}
 // const frameContent = document.querySelector("")
@@ -20,11 +26,12 @@ const afterClassURL = "./assets/AfterClass_Mockup_05_alt_logo.png"
 function clearModal (id){
     // currentInfo = {}
     document.getElementById(id).src = './assets/Blue_loading_cirlce.gif';
-    
+
 }
 
 function changeSrc(loc) {
     clearModal('projectFrame')
+    clearImps(impText)
     if(loc){
         document.getElementById('projectFrame').src = loc;
         console.log(`source changed to: ${loc}`)
@@ -80,6 +87,10 @@ async function fetchInfo(){
     const response = await fetch('./assets/Projects.json')
     const data = await response.json()
     projects = data.projects 
+    clearImps(impText)
+}
+function clearImps(tar){  
+   return tar.innerHTML = "";
 }
 // Fill json info based on selected project button
 function fillInfo(name){
@@ -88,18 +99,15 @@ function fillInfo(name){
             project.name === name
         )
     })
-    let infoName = document.getElementById('infoName')
-    let inspText = document.getElementById('inspiration')
-    let impText= document.getElementById('implementation')
-    let lessText= document.getElementById('lessons')
+    
 
     infoName.textContent = `"${currentInfo.name}"`
-    inspText.textContent = currentInfo.info.inspiration
-    impText.textContent = currentInfo.info.implementation
-    lessText.textContent = currentInfo.info.lessons
+    inspText.innerHTML = currentInfo.info.inspiration
 
-    // console.log(currentInfo)
-    // infoBox.innerHTML=`<p>${currentInfo}</p> `
+    currentInfo.info.implementation.map(imp=>{
+        impText.innerHTML += `<li>  ${imp}  </li>`;
+    })
+    lessText.textContent = currentInfo.info.lessons
 }
 triggers.forEach(trigger =>{    
     trigger.addEventListener("click",function(e){
