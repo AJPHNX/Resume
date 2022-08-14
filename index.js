@@ -98,6 +98,16 @@ function clearImps(tar){
    return tar.innerHTML = "";
    
 }
+function repoCheck(){
+    let i = 0;
+    return( !currentInfo.repo.title ? projRepo.textContent = "N/A" :currentInfo.repo.map(repo=>{
+                projRepo.innerHTML += ` <a href="${currentInfo.repo[i].link}"target="_blank"> ${currentInfo.repo[i].title} </a> <br>`;
+                console.log(projRepo.innerHTML)
+                console.log(currentInfo.repo[i])
+                i++;
+                // console.log(currentInfo.repo[repo].title)
+            }))
+    } 
 // Fill json info based on selected project button
 function fillInfo(name){
     currentInfo = projects.find(project =>{
@@ -123,6 +133,8 @@ function fillInfo(name){
         i++;
         // console.log(currentInfo.repo[repo].title)
     });
+      
+    // repoCheck()
 }
 triggers.forEach(trigger =>{    
     trigger.addEventListener("click",function(e){
