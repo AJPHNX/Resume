@@ -151,7 +151,7 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     /* margin-top: 2em; */
     width: 90vw;
     /* height: 80vh; */
-    min-width: 650px;
+    min-width: 750px;
     max-height: fit-content;
     /* border-radius: 0.5rem; */
     border-radius: 0px 40px 0px 40px;
@@ -264,6 +264,13 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
 /*************
 Info Modal
 *****************/
+#modal {
+    
+}
+#infoModal.active {
+    opacity: 1;
+    transform: translateY(0)
+}
 .infoModal {
     position: relative;
     left: 0;
@@ -279,6 +286,10 @@ Info Modal
     padding-top: 1em;
     display: hidden;
     overflow: scroll;
+    /* ------- */
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-100%)
 }
 .infoContent{
     padding-bottom: 2em;

@@ -37,64 +37,68 @@
         <div class="modal">
             <!-- <div class="infoModal" id ="infoModal"> -->   
             <!-- </div>   -->
-            <div class="modalTop">← Click outside to close →</div>
-            <div class="modal-content">
-               
-                <button class="infoTrigger infoButton blink" id="infoButton">
-                    <img src="./assets/infoButton.png" height ="50px" width ="50px" alt="info"> </img>
-                </button > 
+            <div class= "modalWrap">
+                <div class="modalTop">← Click outside to close →</div>
+                <div class="modal-content">
+                
+                    <button class="infoTrigger infoButton blink" id="infoButton">
+                        <img src="./assets/infoButton.png" height ="50px" width ="50px" alt="info"> </img>
+                    </button > 
 
-               <div class="infoModal show-infoModal">
-                    <div class="infoModal-content">
-
+                <div class="infoModal show-infoModal">
+                    <div class="infoModalWrap">
                         <div class="closeWrapper">
                             <span class="infoClose-button blink">&times;</span>
                         </div>
 
-                            <div class="actualInfo" id ="actualInfo">
-                                
-                                <div class="infoHeader">
-                                    <h1>About</h1>
-                                    <!-- <br> -->
-                                    <div><h2 id="projName"></h2></div>
- 
-                                        <div class="status">
-                                            <h3>Status:</h3>
-                                            <p id="status"> </p>
-                                        </div>
+                        <div class="infoModal-content">
+                           
+                           
+                                <div class="actualInfo" id ="actualInfo">
+                                    
+                                    <div class="infoHeader">
+                                        <h1>About</h1>
+                                        <!-- <br> -->
+                                        <div><h2 id="projName"></h2></div>
+    
+                                            <div class="status">
+                                                <h3>Status:</h3>
+                                                <p id="status"> </p>
+                                            </div>
 
-                                        <div class="description">
-                                            <h3>Description:</h3>
-                                            <p id="description"> </p>
+                                            <div class="description">
+                                                <h3>Description:</h3>
+                                                <p id="description"> </p>
+                                            </div>
+                                            
+            
                                         </div>
-                                        
-        
-                                    </div>
-                                    <div class="infoContent">
-                                        <h3><u>Inspiration:</u></h3> 
-                                        <p id="inspiration"> </p>
-                                        <h3><u>Implementation(s):</u></h3> 
-                                        <p ><ol id="implementation"></ol> </p>
-                                        <h3><u>Lessons:</u></h3> 
-                                        <p id="lessons"> </p>
-                                        <div class="repo">
-                                            <h3>Repo Link(s)</h3>
-                                            <p id="repo"> </p>
+                                        <div class="infoContent">
+                                            <h3><u>Inspiration:</u></h3> 
+                                            <p id="inspiration"> </p>
+                                            <h3><u>Implementation(s):</u></h3> 
+                                            <p ><ol id="implementation"></ol> </p>
+                                            <h3><u>Lessons:</u></h3> 
+                                            <p id="lessons"> </p>
+                                            <div class="repo">
+                                                <h3>Repo Link(s)</h3>
+                                                <p id="repo"> </p>
+                                            </div>
                                         </div>
+                                    
+                                        <div class="poweredBy"><h6>Powered by: </h6> <h5>The AJPHNX Projects API</h5></div>
                                     </div>
-                                   
-                                    <div class="poweredBy"><h6>Powered by: </h6> <h5>The AJPHNX Projects API</h5></div>
                                 </div>
-                        
+                            
+                        </div>
+                    </div>  
+                    <span class="close-button"></span>
+                    <div class="frame-container">
+                        <iframe src="" class="frame responsive-iframe" id="projectFrame"> </iframe>
                     </div>
-                </div>  
-                <span class="close-button"></span>
-                <div class="frame-container">
-                    <iframe src="" class="frame responsive-iframe" id="projectFrame"> </iframe>
                 </div>
             </div>
         </div>
-        
    </div>
 </body>
 <script src="index.js"></script>
