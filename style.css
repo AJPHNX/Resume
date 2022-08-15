@@ -24,7 +24,7 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     display: flex;
     position: relative;
     margin: auto;
-    width: 100%;
+    width:  750px;
     height: 4em;
     top: 0px; 
     justify-content: center;
