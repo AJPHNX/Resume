@@ -67,7 +67,7 @@
     {
         "id": 4 ,
         "name": "SQL-Injection-Punching-Bag",
-        "url": "https://ajphnx.github.io/SQL-Injection-Activity/",
+        "url": "https://sql-injection-punching-bag.herokuapp.com/",
         "type": "React App",
         "description":"A React app built to practice SQL-injection techniques and protections.",
         "status": "Beta",
