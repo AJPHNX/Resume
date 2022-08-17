@@ -61,10 +61,9 @@ function windowOnClick(event) {
     }
 }
 
-function modalCheck(){
+// function modalCheck(){
     
-}
-
+// }
 function fillFrame(name){
     // clearModal ('projectFrame');
     currentInfo = projects.find(project =>{
@@ -72,19 +71,7 @@ function fillFrame(name){
             project.name === name
         )
     })
-    console.log('Changing Sources Name To: '+ name)
-    switch(name) {
-        case "subEarth":
-            console.log('Changing URL To: '+ currentInfo.url)
-            changeSrc(currentInfo.url)
-          break;
-        case "nVentory":
-            changeSrc(currentInfo.url)
-            break;
-        case "afterClass":
-            changeSrc(currentInfo.url)
-          break;
-    }
+    changeSrc(currentInfo.url)
     fillInfo(name);
 }
 //Fetch info from Json file

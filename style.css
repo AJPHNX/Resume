@@ -18,8 +18,15 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     min-width: 950px;
     height: auto;
     background-color:#fff;
-
 }
+
+/* .medManWrap {
+   width: fit-content;
+}
+#medMan{
+    width: 150px;
+    height: auto;
+} */
 #statement {
     display: flex;
     position: relative;
@@ -264,9 +271,9 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
 /*************
 Info Modal
 *****************/
-#modal {
+/* #modal {
     
-}
+} */
 #infoModal.active {
     opacity: 1;
     transform: translateY(0)
