@@ -12,6 +12,7 @@ let projName = document.getElementById('projName')
 let projStatus = document.getElementById('status')
 let projDesc = document.getElementById('description')
 let projRepo = document.getElementById('repo')
+let projHost = document.getElementById('host')
 
 let inspText = document.getElementById('inspiration')
 let impText = document.getElementById('implementation')
@@ -106,6 +107,7 @@ function fillInfo(name){
     projName.textContent = `"${currentInfo.name}"`
     projStatus.textContent = currentInfo.status;
     projDesc.textContent = currentInfo.description;
+    projHost.textContent = currentInfo.host;
     inspText.innerHTML = currentInfo.info.inspiration
 
     currentInfo.info.implementation.map(imp=>{
