@@ -107,7 +107,9 @@ function fillInfo(name){
     projName.textContent = `"${currentInfo.name}"`
     projStatus.textContent = currentInfo.status;
     projDesc.textContent = currentInfo.description;
-    projHost.textContent = currentInfo.host;
+    let host_link=`<a href="${currentInfo.url}">${currentInfo.host}</a>`
+    console.log(host_link)
+    projHost.innerHTML = host_link;
     inspText.innerHTML = currentInfo.info.inspiration
 
     currentInfo.info.implementation.map(imp=>{
@@ -116,7 +118,7 @@ function fillInfo(name){
     lessText.textContent = currentInfo.info.lessons
     let i = 0;
     currentInfo.repo.map(repo=>{
-        projRepo.innerHTML += ` <a href="${currentInfo.repo[i].link}"target="_blank"> ${currentInfo.repo[i].title} </a> <br>`;
+        projRepo.innerHTML = ` <a href="${currentInfo.repo[i].link}"target="_blank"> ${currentInfo.repo[i].title} </a> <br>`;
         console.log(projRepo.innerHTML)
         console.log(currentInfo.repo[i])
         i++;
