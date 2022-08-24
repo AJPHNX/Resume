@@ -6,6 +6,7 @@ const triggers = document.querySelectorAll(".trigger");
 const about_trigger = document.querySelector(".about-trigger");
 const aboutDiv = document.querySelector(".about-div");
 const infoButton = document.getElementById("infoButton");
+const emailButton = document.getElementById("email-link");
 // const trigger2 = document.querySelectorAll(".trigger2");
 const closeButton = document.querySelector(".close-button");
 const infoCloseButton = document.querySelector(".infoClose-button");
@@ -61,6 +62,17 @@ function toggleAbout() {
     console.log("Showing about ???")
 }
 
+function sel_mod_content(e){
+    switch(e.target){
+        case about_trigger:
+            console.log("about")
+        break;
+        case email_trigger:
+            console.log("email")
+        break;
+    }
+    e.target.classList.toggle("")
+}
 function windowOnClick(event) {
     if (event.target === modal) {
         clearModal('projectFrame')
@@ -114,7 +126,7 @@ function fillInfo(name){
     projName.textContent = `"${currentInfo.name}"`
     projStatus.textContent = currentInfo.status;
     projDesc.textContent = currentInfo.description;
-    let host_link=`<a href="${currentInfo.url}">${currentInfo.host}</a>`
+    let host_link=`<a href="${currentInfo.url}"target="_blank">${currentInfo.host}</a>`
     console.log(host_link)
     projHost.innerHTML = host_link;
     inspText.innerHTML = currentInfo.info.inspiration

@@ -55,8 +55,18 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     transform: translateY(-100%);
     background-color: #4c4c4cf4;
     color: rgb(255, 255, 255);
-    box-shadow: -3px -3px 18px 7px #FFF67B;
-    
+    box-shadow: -3px -3px 18px 7px #FFF67B;    
+}
+.about-trigger{
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.about-trigger h1{
+    position: relative;
+    top:50%;
 }
 .about-div-content {
     position: relative;
