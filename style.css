@@ -11,30 +11,39 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
 #container {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     margin: auto;
     top: 0px;
-    width: 100%;
+    width: 100vw;
     min-width: 950px;
     height: auto;
     background-color:#fff;
 }
+#wrap {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    /* border: 1px dotted red; */
+}
 .about-div{
-    border: 2px solid blue;
-    max-width: 750;
-    max-height:400px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    border: 5px ridge #868686;
+    border-radius: 10px 10px;
+    width: 60vw;
+    height: 40vh;
+    max-width: 600px;
+    max-height: 400px;
+    min-width: 50vw;
     margin: auto;
     visibility: hidden;
-
-    position: relative;
     left: 0;
     top: 0;
-    width: fit-content;
-    height: fit-content;
+    /* width: fit-content;
+    height: fit-content; */
     /* background-color: rgba(186, 243, 222, 0.5); */
     /* opacity: 1; */
-    visibility: hidden;
-    
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
     z-index: 995;
     padding-top: 1em;
@@ -43,8 +52,30 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     /* ------- */
     transition: all .3s ease-in-out;
     opacity: 0;
-    transform: translateY(-100%)
+    transform: translateY(-100%);
+    background-color: #4c4c4cf4;
+    color: rgb(255, 255, 255);
+    box-shadow: -3px -3px 18px 7px #FFF67B;
     
+}
+.about-div-content {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    align-content: center;
+    text-align: center;
+    /* border: 2px dotted blue; */
+}
+.about-div-content img{
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 150px;
+    height: auto;
+    /* border-radius: 100% 100%; */
+    /* background-color: rgb(96, 227, 253); */
 }
 .show-about-div {
     opacity: 1;
@@ -146,18 +177,20 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     width: 150px;
     height: auto;
     opacity: 0.8;
+    animation: blinker 2s linear infinite;
+}
+#about-link img:hover{
     animation: floater 3s linear infinite;
 }
 
 #about-link:hover {
-    animation: blinker 2s linear infinite;
     background: rgb(255,247,123);
-background: radial-gradient(circle, rgba(255,247,123,1) 0%, rgba(255,255,255,0) 77%);  
+    background: radial-gradient(circle, rgba(255,247,123,1) 0%, rgba(255,255,255,0) 77%);  
 }
 #about-link:active {
    opacity: 1; 
    background: rgb(255,247,123);
-background: radial-gradient(circle, rgba(255,247,123,1) 0%, rgba(255,255,255,0) 77%);
+    background: radial-gradient(circle, rgba(255,247,123,1) 0%, rgba(255,255,255,0) 77%);
 }
 
 #email-link{
@@ -166,6 +199,7 @@ background: radial-gradient(circle, rgba(255,247,123,1) 0%, rgba(255,255,255,0) 
 }
 #email-link img{
     float: right;
+    padding-right: 10px;
     width: 40px;
     height: auto; 
 }
@@ -294,10 +328,10 @@ background: radial-gradient(circle, rgba(255,247,123,1) 0%, rgba(255,255,255,0) 
 }
 
 .frame-container {
-    display: flex;
+    display: flex; 
     align-content: center;
     justify-content: center;
-    width: 90vw;
+    width: 95vw;
     min-width: fit-content;
     min-height: fit-content;
     overflow: none;
