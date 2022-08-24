@@ -3,6 +3,8 @@
 const modal = document.querySelector(".modal");
 const infoModal = document.querySelector(".infoModal");
 const triggers = document.querySelectorAll(".trigger");
+const about_trigger = document.querySelector(".about-trigger");
+const aboutDiv = document.querySelector(".about-div");
 const infoButton = document.getElementById("infoButton");
 // const trigger2 = document.querySelectorAll(".trigger2");
 const closeButton = document.querySelector(".close-button");
@@ -54,13 +56,16 @@ function toggleInfoModal() {
     infoModal.classList.toggle("show-infoModal");
     console.log("window modal???")
 }
+function toggleAbout() {
+    aboutDiv.classList.toggle("show-about-div");
+    console.log("Showing about ???")
+}
 
 function windowOnClick(event) {
     if (event.target === modal) {
         clearModal('projectFrame')
         toggleModal();
         currentInfo = []
-        // toggleInfoModal();
     }
 }
 
@@ -131,13 +136,14 @@ function fillInfo(name){
 }
 triggers.forEach(trigger =>{    
     trigger.addEventListener("click",function(e){
-    console.log("triggering: " + this.id);
+    console.log("triggering: "+this.id);
     // clearModal ('projectFrame');
     fillFrame(this.id);
     });
 });
 
 // 
+about_trigger.addEventListener("click", toggleAbout);
 closeButton.addEventListener("click", toggleModal);
 infoCloseButton.addEventListener("click", toggleInfoModal);
 infoButton.addEventListener("click",()=>{

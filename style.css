@@ -19,7 +19,39 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     height: auto;
     background-color:#fff;
 }
+.about-div{
+    border: 2px solid blue;
+    max-width: 750;
+    max-height:400px;
+    margin: auto;
+    visibility: hidden;
 
+    position: relative;
+    left: 0;
+    top: 0;
+    width: fit-content;
+    height: fit-content;
+    /* background-color: rgba(186, 243, 222, 0.5); */
+    /* opacity: 1; */
+    visibility: hidden;
+    
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 995;
+    padding-top: 1em;
+    display: hidden;
+    overflow: scroll;
+    /* ------- */
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-100%)
+    
+}
+.show-about-div {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
 /* .medManWrap {
    width: fit-content;
 }
@@ -60,6 +92,12 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     /* border-radius: 0px 40px 0px 40px; */
     /* box-shadow: inset 2px 2px 10px 2px #242527; */
 }
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
 
 .nav{
     /* position: absolute; */
@@ -75,7 +113,7 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     /* padding: 1em 2em; */
     /* margin: 4em 2em;  */
     /* margin-bottom: 2em; */
-    z-index: 950;
+    z-index: 50;
     /* border: 1px solid blue; */
     
 }
@@ -103,10 +141,33 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     /* font-size: ; */
     
 }
+#about-link img{
+    position: relative;
+    width: 150px;
+    height: auto;
+    opacity: 0.8;
+    animation: floater 3s linear infinite;
+}
+
+#about-link:hover {
+    animation: blinker 2s linear infinite;
+    background: rgb(255,247,123);
+background: radial-gradient(circle, rgba(255,247,123,1) 0%, rgba(255,255,255,0) 77%);  
+}
+#about-link:active {
+   opacity: 1; 
+   background: rgb(255,247,123);
+background: radial-gradient(circle, rgba(255,247,123,1) 0%, rgba(255,255,255,0) 77%);
+}
+
+#email-link{
+    position: relative;
+    top: 35px;
+}
 #email-link img{
     float: right;
     width: 40px;
-    height: auto;
+    height: auto; 
 }
 #email-link:hover {
     /* opacity: 0.5; */
@@ -283,6 +344,55 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
 .blink {
     animation: blinker 2s linear infinite;
 }
+
+@-moz-keyframes floater {  
+    0%, 100% {
+        bottom: 0;
+        -moz-transform: rotate(0deg); 
+      }
+      25%{
+        -moz-transform: rotate(5deg); 
+      }
+      50% {
+        bottom: 25px;
+        
+      }
+      75%{
+        -moz-transform: rotate(-5deg); 
+      }
+    }
+@-webkit-keyframes floater {  
+    0%, 100% {
+        bottom: 0;
+        -webkit-transform: rotate(0deg); 
+      }
+      25%{
+        -webkit-transform: rotate(5deg); 
+      }
+      50% {
+        bottom: 25px;
+        
+      }
+      75%{
+        -webkit-transform: rotate(-5deg); 
+      }
+    }
+ @keyframes floater {   
+    0%, 100% {
+        bottom: 0;
+        transform: rotate(0deg); 
+      }
+      25%{
+        transform: rotate(5deg); 
+      }
+      50% {
+        bottom: 25px;
+        
+      }
+      75%{
+        transform: rotate(-5deg); 
+      }
+    }
 
 
 @-moz-keyframes blinker {  
