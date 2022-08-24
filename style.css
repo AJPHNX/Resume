@@ -103,6 +103,7 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; fo
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-size: 1em;
     color: #5a5959;
+    border-bottom: 1px solid #5a5959;
     /* background-color:rgb(34, 40, 40); */
     /* background-color:#868686; */
     /* background: rgb(134,134,134);

@@ -144,6 +144,9 @@ triggers.forEach(trigger =>{
 
 // 
 about_trigger.addEventListener("click", toggleAbout);
+about_trigger.addEventListener("mouseover",()=>{
+    //about_trigger.textContent = 
+});
 closeButton.addEventListener("click", toggleModal);
 infoCloseButton.addEventListener("click", toggleInfoModal);
 infoButton.addEventListener("click",()=>{
