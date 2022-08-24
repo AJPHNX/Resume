@@ -1,9 +1,30 @@
 {"projects":[
+    {   "id": 0 ,
+        "name": "AJPHNX.com",
+        "url": "http://ajphnx.com/",
+        "host": "Blue Host",
+        "type": "Landing Page",
+        "year": "2021",
+        "description": "Personal landing page for my creative endeavors",
+        "status": "Deployed",
+        "repo": [{
+            "title": "N/A",
+            "link":"N/A"}],
+        "info":{
+           "inspiration":"",
+           "implementation":[
+               ""
+            ],
+           "lessons":"",
+           "reviews":""
+        }
+    },
     {   "id": 1 ,
         "name": "subEarth",
         "url": "https://ajphnx.github.io/SubEarth/",
         "host": "GitHub Pages",
         "type": "Browser Game",
+        "year": "2022",
         "description": "Browser-based Game",
         "status": "In progress",
         "repo": [{
@@ -26,6 +47,7 @@
         "url": "./assets/afterclass.html",
         "host": "N/A",
         "type": "Fullstack Platform",
+        "year": "2022",
         "description":"FullStack Platform Mockup",
         "status": "Mockup",
         "repo": [{
@@ -48,6 +70,7 @@
         "url": "https://nventory-frontend.herokuapp.com/",
         "host": "Heroku",
         "type": "Fullstack Mobile",
+        "year": "2022",
         "description":"Fullstack PERN application utilizing microservices to handle front and back ends separately through an API/Mobile first design.",
         "status": "Beta",
         "repo": [{
@@ -71,8 +94,9 @@
         "id": 4 ,
         "name": "SQL-Injection-Punching-Bag",
         "url": "https://sql-injection-punching-bag.herokuapp.com/",
-        "type": "React App",
         "host": "Heroku",
+        "type": "React App",
+        "year": "2022",
         "description":"A React app built to practice SQL-injection techniques and protections.",
         "status": "Beta",
         "repo": [{

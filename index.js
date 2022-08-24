@@ -48,6 +48,7 @@ function changeSrc(loc) {
 function toggleModal() {
     modal.classList.toggle("show-modal");
     infoButton.classList.toggle('show-infoButton')
+    
 }
 function toggleInfoModal() {
     infoModal.classList.toggle("show-infoModal");
@@ -56,6 +57,7 @@ function toggleInfoModal() {
 
 function windowOnClick(event) {
     if (event.target === modal) {
+        clearModal('projectFrame')
         toggleModal();
         currentInfo = []
         // toggleInfoModal();
@@ -129,7 +131,7 @@ function fillInfo(name){
 }
 triggers.forEach(trigger =>{    
     trigger.addEventListener("click",function(e){
-    console.log("triggering: "+this.id);
+    console.log("triggering: " + this.id);
     // clearModal ('projectFrame');
     fillFrame(this.id);
     });
