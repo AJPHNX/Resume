@@ -5,6 +5,7 @@
         "host": "Blue Host",
         "type": "Landing Page",
         "year": "2021",
+        "technologies": ["HTML5","CSS3","Js6"],
         "description": "Personal landing page for my creative endeavors",
         "status": "Deployed",
         "repo": [{
@@ -23,6 +24,7 @@
         "host": "GitHub Pages",
         "type": "Browser Game",
         "year": "2022",
+        "technologies": ["HTML5","CSS3","Js6"],
         "description": "Browser-based Game",
         "status": "In progress",
         "repo": [{
@@ -46,6 +48,7 @@
         "host": "N/A",
         "type": "Fullstack Platform",
         "year": "2022",
+        "technologies": ["figma"],
         "description":"FullStack Platform Mockup",
         "status": "Mockup",
         "repo": [{
@@ -69,6 +72,7 @@
         "host": "Heroku",
         "type": "Fullstack Mobile",
         "year": "2022",
+        "technologies": ["React","CSS3","Axios","Express","postgresQL"],
         "description":"Fullstack PERN application utilizing microservices to handle front and back ends separately through an API/Mobile first design.",
         "status": "Beta",
         "repo": [{
@@ -95,6 +99,7 @@
         "host": "Heroku",
         "type": "React App",
         "year": "2022",
+        "technologies": ["HTML5","CSS3","Js6"],
         "description":"A React app built to practice SQL-injection techniques and protections.",
         "status": "Beta",
         "repo": [{
