@@ -12,6 +12,7 @@ const nav_right = document.getElementById("nav-right");
 const emailButton = document.getElementById("email-link");
 // const trigger2 = document.querySelectorAll(".trigger2");
 const closeButton = document.querySelector(".browser-button-cls");
+const termCloseButton = document.querySelector(".term-button-cls");
 const infoCloseButton = document.querySelector(".infoClose-button");
 
 // -----Project vars--------//
@@ -220,6 +221,7 @@ about_trigger.addEventListener("mouseover",()=>{
     //about_trigger.textContent = 
 });
 closeButton.addEventListener("click", toggleModal);
+termCloseButton.addEventListener("click", toggleModal);
 // infoCloseButton.addEventListener("click", toggleInfoModal);
 infoButton.addEventListener("click",()=>{
     // toggleInfoModal();
