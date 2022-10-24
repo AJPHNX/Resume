@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="icon" href="./assets/Self-Portrait.png"> -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./browser.css">
+    <link rel="stylesheet" href="./term.css">
     <link rel="icon" type="image/x-icon" href="./assets/Self-Portrait.png">
     <title>Resume</title>
     <meta name="pinterest" content="nopin" />
@@ -43,9 +45,12 @@
     </div>
     <div id="container">
        <div id="wrap">
-            <div class= "header">
-                <div class="about-trigger " id="about-link">
+           <!------[HEADER]------->
+            <div class= "header ">
+                <div  class=" about-trigger " id="about-link">
+                        <span>
                         <img src="./assets/MedMan.png" alt="about" title="about">
+                        </span> 
                         <!-- <h1> About</h1> -->
                 </div>
                 <div id = "statement">
@@ -60,105 +65,147 @@
                 <!-- <div Class="medManWrap">
                     <img src="./assets/MedMan.png" alt="MedMan Image" id="medMan"/>
                 </div> -->
+            <div class="body">
                 
-            
+                <!------[NAV]------->
                 <nav class="nav ">
-                    <div class="blink" id="nav-filler"><h1> ← </h1></div>
-                    <div class ="button-box">
-                        <button class="trigger" id="AJPHNX.com">AJPHNX.com<br/>
+                    <div class ="button-box ">
+                        <div class="blink glitch" id="nav-filler">projects</div>
+                        <div class="blink" id="nav-filler"><h1>&nbsp;</h1></div>
+
+                        <div class="" id="nav-filler"><h3>&nbsp;</h3></div>
+                        <button class="trigger" id="AJPHNX.com" value="0">AJPHNX.com<br/>&nbsp;
                             <div class="buttonSubText">(Landing Page)</div>
                         </button>
-                        <button class="trigger" id="subEarth">SubEarth (Browser Game)<br/>
-                            <div class="buttonSubText">In progress </div>
+                        <button class="trigger" id="NDAerLander"  value="1">the NDAer <br/>&nbsp;
+                            <div class="buttonSubText">(Landing Page)</div>
                         </button>
-                        <button class="trigger" id="afterClass">AfterClass{} (Fullstack Platform)
-                            <div class="buttonSubText">Mockup </div>
-                        </button>
-                        <button class="trigger" id="nVentory">nVentory (Fullstack Mobile)
+                        <button class="trigger" id="NDAer"  value="2">the NDAer (Fullstack Mobile)
                             <div class="buttonSubText">beta </div>
                         </button>
-                        <button class="trigger" id="SQL-Injection-Punching-Bag">SQLInjection Punching-Bag (React App)
+                        <button class="trigger" id="nVentory"  value="3">nVentory (Fullstack Mobile)
+                            <div class="buttonSubText">beta </div>
+                        </button>
+                        <button class="trigger" id="subEarth"  value="4">SubEarth (Browser Game)<br/>&nbsp;
+                            <div class="buttonSubText">refactoring </div>
+                        </button>
+                        <button class="trigger" id="afterClass"  value="5">AfterClass{} (Fullstack Platform)
+                            <div class="buttonSubText">Mockup </div>
+                        </button>
+                        <button class="trigger" id="SQL-Injection-Punching-Bag"  value="6">SQLInjection Punching-Bag (React App)
                             <div class="buttonSubText">beta </div>
                         </button>
                     </div>
                 </nav>
-            
-        
-            <div id ="resumeWrap">
-                <iframe src="./assets/ResumeSML.pdf" width="100%" height="800px">
-                </iframe>
+
+                <!------[RESUME]------->
+                <div id ="resumeWrap">
+                    <iframe src="./assets/ResumeSML.pdf" width="100%" height="800px">
+                    </iframe>
+                </div>
             </div>
-            <div class="modal">
-                <!-- <div class="infoModal" id ="infoModal"> -->   
-                <!-- </div>   -->
-                <div class= "modalWrap">
-                    <div class="modalTop">← Click outside to close →</div>
-                    <div class="modal-content">
-                    
-                        <button class="infoTrigger infoButton blink" id="infoButton">
-                            <img src="./assets/infoButton.png" height ="50px" width ="50px" alt="info"> </img>
-                        </button > 
-
-                    <div class="infoModal show-infoModal">
-                        <div class="infoModalWrap">
-                            <div class="closeWrapper">
-                                <span class="infoClose-button blink">&times;</span>
+            <!------[RESUME]------->
+            
+            <!------[Browser modal]------->
+            <div class="browser-modal modal-fx center">
+                <div class="modal-wrap">
+                    <div class="browser-container">
+                        <div class="browser-header">
+                            <div class="browser-button-cls">
+                                <span class="x-btn-text blink">x</span>
                             </div>
-
-                            <div class="infoModal-content">
-                            
-                            
-                                    <div class="actualInfo" id ="actualInfo">
-                                        
-                                        <div class="infoHeader">
-                                            <h1>About</h1>
-                                            <!-- <br> -->
-                                            <div><h2 id="projName"></h2></div>
-        
-                                                <div class="status">
-                                                    <h3>Status:</h3>
-                                                    <p id="status"> </p>
-                                                </div>
-
-                                                <div class="description">
-                                                    <h3>Description:</h3>
-                                                    <p id="description"> </p>
-                                                </div>
-                                                <div class="hosting">
-                                                    <h3>Hosting:</h3>
-                                                    <div id="host"> </div>
-                                                </div>
-                
-                                            </div>
-                                            <div class="infoContent">
-                                                <h3><u>Inspiration:</u></h3> 
-                                                <p id="inspiration"> </p>
-                                                <h3><u>Implementation(s):</u></h3> 
-                                                <p ><ol id="implementation"></ol> </p>
-                                                <h3><u>Lessons:</u></h3> 
-                                                <p id="lessons"> </p>
-                                                <div class="repo">
-                                                    <h3>Repo Link(s)</h3>
-                                                    <p id="repo"> </p>
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="poweredBy"><h6>Powered by: </h6> <h5>The AJPHNX Projects API</h5></div>
-                                        </div>
-                                    </div>
-                                
+                            <img src="assets/denim.png" alt="denim texture" id="denim">
+                            <div class="browser-title" id="browser-title">
+                                project name
                             </div>
-                        </div>  
+                        </div>
+                        <div class="browser-nav-bar">
+                   <div class="url-arrows"><span id="nav-left" class="nav-btn">←</span><span id="nav-right" class="nav-btn"> → </span><span id="nav-right"> @ </span></div>
+                   <div class="url-box">
+                       <div class="infoTrigger infoButton blink" id="infoButton">
+                           <img src="./assets/infoButton.png"  alt="info"> </img>
+                        </div>  <span id="browser-url">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="browser-body">
+                    <div class="browser-body-content">
                         <span class="close-button"></span>
                         <div class="frame-container">
                             <iframe src="" class="frame responsive-iframe" id="projectFrame"> </iframe>
-                        </div>
+                        </div>      
                     </div>
                 </div>
+                <div class="bottom-adr">
+                    <div class="browser-poweredBy">Powered by:  <strong>The AJPHNX Projects API</strong></div>
+                </div>
+            </div>
+            </div>
+            <!------[Browser modal]------->
+
+            <!------[Term modal]------->
+            <!-- <div class="term-modal"> -->
+                
+            <!-- <div class="term-modal center"> -->
+            <div class="term-container">
+                <div class="term-header">
+                    <div class="browser-button-cls"><span class="x-btn-text blink">x</span></div>
+                    <div class="term-title projName">
+                        project name
+                    </div>
+
+                </div>
+                <div class="term-body">
+                    <div class="term-body-content">
+                        <!-- <div class="actualInfo" id ="actualInfo"> -->
+                            <!-- <span class="infoHeader proj-tag">about</span> -->
+                            <!-- <span  class="term-projName proj-tag"></span> -->
+                            <span class=" status proj-tag">ajphnx@ status/~% : </span>
+                            <span id="status"></span><br/>
+                            <br/>
+                                
+                            <span class="description proj-tag">ajphnx@ Description/~% :</span>
+                                <span id="description"></span>
+                                <br/>
+                                <br/>
+                                <span class="hosting proj-tag">ajphnx@ Deployment/~% : <span id="deployment"></span></span>
+                                <br/>
+                                <br/>
+                                <span class="infoContent proj-tag">ajphnx@ Inspiration/~% :   
+                            </span>                             
+                            <span id="inspiration"></span>
+                            <br/>
+                            <br/>
+                            <span class="infoContent proj-tag">ajphnx@ Implementation(s)/~% :</span>
+                                <!-- <p > -->
+                                    <ol id="implementation"></ol> 
+                                <!-- </p> -->
+                                <br/>
+                                
+                                <span class="infoContent proj-tag"> ajphnx@ Lessons/~% :</span>
+                                <span id="lessons"> </span>
+                                <br/>
+                                <br/>
+                                <div class="repo proj-tag">
+                                    ajphnx@ Repo Link(s)/~% :
+                                    <span id="repo"> </span>
+                                </div>
+                                <div class="term-poweredBy">Powered by: <strong>The AJPHNX Projects API</strong></div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                </div>
+         <!-- </div> -->
+    
+               
+            <!------[Term modal]------->
         </div>
-   </div>
-</body>
+    </div>
+</div>
+</div>
 <script src="index.js"></script>
+</body>
+
 
 
 </html>

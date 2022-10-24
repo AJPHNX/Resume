@@ -1,12 +1,17 @@
 {"projects":[
-    {   "id": 0 ,
+    {   "id": "0" ,
         "name": "AJPHNX.com",
         "url": "https://ajphnx.com/index.html",
-        "host": "Blue Host",
+        "deployment": {
+            "frontend": "Blue Host",
+            "backend": "n/a",
+            "database": "n/a"
+        },
         "type": "Landing Page",
         "year": "2021",
         "technologies": ["HTML5","CSS3","Js6"],
         "description": "Personal landing page for my creative endeavors",
+        "restrictions":"",
         "status": "Deployed",
         "repo": [{
             "title": "N/A",
@@ -18,62 +23,72 @@
            "reviews":""
         }
     },
-    {   "id": 1 ,
-        "name": "subEarth",
-        "url": "https://ajphnx.github.io/SubEarth/",
-        "host": "GitHub Pages",
-        "type": "Browser Game",
-        "year": "2022",
+    {   "id": "1" , 
+        "name": "theNDAer qr landing page",
+        "url": "https://ajphnx.github.io/NDAerLander/",
+        "deployment": {
+            "frontend": "Github Pages",
+            "backend": "n/a",
+            "database": "n/a"
+        },
+        "type": "Landing Page",
+        "year": "2021",
         "technologies": ["HTML5","CSS3","Js6"],
-        "description": "Browser-based Game",
-        "status": "In progress",
+        "description": "Temporary landing page for \"theNDAer\" QR",
+        "restrictions":"",
+        "status": "Deployed",
         "repo": [{
-            "title": "Progress",
-            "link":"https://github.com/AJPHNX/SubEarth"}],
+            "title": "n/a",
+            "link": "https://github.com/AJPHNX/NDAerLander"}],
         "info":{
-           "inspiration":"This initial module of SubEarth is based on my work experience with the slicer at Jersey Mike’s Subs. Alongside making the sandwiches correctly, the goal is to handle the cue as optimally as possible by preloading it, and slicing as many of the like-sandwich components as you can, at the same time.",
-           "implementation":[
-               "A training system with immediate rewards based in stimuli and relatability (further solidifying a more enjoyable angle on the experience, triggered by notions of personal growth and gains)",
-                "A passive marketing tool that implements an enjoyable call to action, that can potentially yield/be paired with rewards and benefits.(w3-ish in nature) ",
-                "Away to kill some time making a bunch of sandwiches without...yah know…having to figure out what to do with them afterwards…A…low-impact sandwich construction outlet🤔🧐"
-            ],
-           "lessons":"Upon undertaking this project, I had the opportunity to explore and combine many of the learned skills from the first portion of my bootcamp up until Javascript. Although not complete(due to its ambitious nature for the time allotted), I still had the opportunity to utilize aspects of the AGILE process when coming to the point that it’d be more beneficial to refactor my code for the results I’m looking to achieve(which I am in the process of in between projects). After observing what data was needing to be handled and how, it became apparent that there was not just a dryer but more effective way to structure/handle the data and its interactions(state and effects)",
+           "inspiration":"",
+           "implementation":[],
+           "lessons":"",
            "reviews":""
         }
     },
     {
-        "id": 2 ,
-        "name": "afterClass",
-        "url": "./assets/afterclass.html",
-        "host": "N/A",
-        "type": "Fullstack Platform",
+        "id": "2" ,
+        "name": "theNDAer",
+        "url": "https://www.youtube.com/embed/dnK1TE6qxag",
+        "deployment": {
+            "frontend": "EC2",
+            "backend": "EC2",
+            "database": "RDS"
+        },
+        "type": "Fullstack Mobile",
         "year": "2022",
-        "technologies": ["figma"],
-        "description":"FullStack Platform Mockup",
-        "status": "Mockup",
+        "technologies": ["React","CSS3","passage.id","react-to-pdf","Axios","knex","Express","postgresQL"],
+        "description":"Fullstack mobile browser-based application, created for generating and signing non-disclosure agreements on the fly",
+        "restrictions":"",
+        "status": "Beta",
         "repo": [{
-            "title": "",
-            "link": ""}],
-        "info":{
-           "inspiration": "While going through my fullstack bootcamp, there was a strong emphasis placed on the demand within the field, while still addressing the competitive nature as well. Another point shared was how important your cohort is in your continued growth, progress and sense of community.<br><br> Upon processing this information and poking around the Linkedins of some of my cohort-mates, I grew to see how eclectic their professional backgrounds and previous experiences were. Knowing we were all in this shared experience to further ourselves through this (possibly) new skill-set, I began to think how beneficial a space to approach projects based on what sparks our coding interests, and what we had to offer from previously established knowledge bases (ie. soft skills and industry awareness).<br><br>So, we have an array of skill-sets and drive but, not everyone has an idea just jumping out in the directions they’d like to explore. With the aid of filtered feeds based on preferences, one can create, browse, collaborate and/or follow projects and cohorts/clans of interest as they further their skill-sets solidifying their working knowledge in an environment designed to bridge the gap between learning, doing, and being." ,
-          
-           "implementation":[
-            "Exploratory breeding space for industry changing technologies straight from the pulse.",
-             "Shift the goal from focusing your growth on just pursuing 'big company'(because it's one of the few frames of reference in the field) to, pursuing meaningful projects that resonate with the direction an individual wants to move in, while showing continued professional and collaborative growth."
+            "title": "Frontend",
+            "link":"https://github.com/AJPHNX/NDAer"}
             ],
-           "lessons":"Time is what it is...I initially wanted to pitch the project to my cohort in hopes of being able to create that space out of its own necessity and ability. Make a cool thing that can help others make the cool things.",
+        "info":{
+           "inspiration":"",
+           "implementation":[
+            "",
+            ""],
+           "lessons":"",
            "reviews":""
         }
     },
     {
-        "id": 3 ,
+        "id": "3" ,
         "name": "nVentory",
         "url": "https://nventory-frontend.herokuapp.com/",
-        "host": "Heroku",
+        "deployment": {
+            "frontend": "Heroku",
+            "backend": "Heroku",
+            "database": "Heroku"
+        },
         "type": "Fullstack Mobile",
         "year": "2022",
         "technologies": ["React","CSS3","Axios","Express","postgresQL"],
         "description":"Fullstack PERN application utilizing microservices to handle front and back ends separately through an API/Mobile first design.",
+        "restrictions":"",
         "status": "Beta",
         "repo": [{
             "title": "Frontend",
@@ -92,15 +107,77 @@
            "reviews":""
         }
     },
+    {   "id": "4" ,
+        "name": "subEarth",
+        "url": "https://ajphnx.github.io/SubEarth/",
+        "deployment": {
+            "frontend": "GitHub Pages",
+            "backend": "n/a",
+            "database": "n/a"
+        },
+        "type": "Browser Game",
+        "year": "2022",
+        "technologies": ["HTML5","CSS3","Js6"],
+        "description": "Browser-based Game",
+        "restrictions":"",
+        "status": "In progress",
+        "repo": [{
+            "title": "Progress",
+            "link":"https://github.com/AJPHNX/SubEarth"}],
+        "info":{
+           "inspiration":"This initial module of SubEarth is based on my work experience with the slicer at Jersey Mike’s Subs. Alongside making the sandwiches correctly, the goal is to handle the cue as optimally as possible by preloading it, and slicing as many of the like-sandwich components as you can, at the same time.",
+           "implementation":[
+               "A training system with immediate rewards based in stimuli and relatability (further solidifying a more enjoyable angle on the experience, triggered by notions of personal growth and gains)",
+                "A passive marketing tool that implements an enjoyable call to action, that can potentially yield/be paired with rewards and benefits.(w3-ish in nature) ",
+                "Away to kill some time making a bunch of sandwiches without...yah know…having to figure out what to do with them afterwards…A…low-impact sandwich construction outlet🤔🧐"
+            ],
+           "lessons":"Upon undertaking this project, I had the opportunity to explore and combine many of the learned skills from the first portion of my bootcamp up until Javascript. Although not complete(due to its ambitious nature for the time allotted), I still had the opportunity to utilize aspects of the AGILE process when coming to the point that it’d be more beneficial to refactor my code for the results I’m looking to achieve(which I am in the process of in between projects). After observing what data was needing to be handled and how, it became apparent that there was not just a dryer but more effective way to structure/handle the data and its interactions(state and effects)",
+           "reviews":""
+        }
+    },
     {
-        "id": 4 ,
+        "id": "5" ,
+        "name": "afterClass",
+        "url": "./assets/afterclass.html",
+        "deployment": {
+            "frontend": "n/a",
+            "backend": "n/a",
+            "database": "n/a"
+        },
+        "type": "Fullstack Platform",
+        "year": "2022",
+        "technologies": ["figma"],
+        "description":"FullStack Platform Mockup",
+        "restrictions":"",
+        "status": "Mockup",
+        "repo": [{
+            "title": "",
+            "link": ""}],
+        "info":{
+           "inspiration": "While going through my fullstack bootcamp, there was a strong emphasis placed on the demand within the field, while still addressing the competitive nature as well. Another point shared was how important your cohort is in your continued growth, progress and sense of community.<br><br> Upon processing this information and poking around the Linkedins of some of my cohort-mates, I grew to see how eclectic their professional backgrounds and previous experiences were. Knowing we were all in this shared experience to further ourselves through this (possibly) new skill-set, I began to think how beneficial a space to approach projects based on what sparks our coding interests, and what we had to offer from previously established knowledge bases (ie. soft skills and industry awareness).<br><br>So, we have an array of skill-sets and drive but, not everyone has an idea just jumping out in the directions they’d like to explore. With the aid of filtered feeds based on preferences, one can create, browse, collaborate and/or follow projects and cohorts/clans of interest as they further their skill-sets solidifying their working knowledge in an environment designed to bridge the gap between learning, doing, and being." ,
+          
+           "implementation":[
+            "Exploratory breeding space for industry changing technologies straight from the pulse.",
+             "Shift the goal from focusing your growth on just pursuing 'big company'(because it's one of the few frames of reference in the field) to, pursuing meaningful projects that resonate with the direction an individual wants to move in, while showing continued professional and collaborative growth."
+            ],
+           "lessons":"Time is what it is...I initially wanted to pitch the project to my cohort in hopes of being able to create that space out of its own necessity and ability. Make a cool thing that can help others make the cool things.",
+           "reviews":""
+        }
+    },
+    {
+        "id": "6",
         "name": "SQL-Injection-Punching-Bag",
         "url": "https://sql-injection-punching-bag.herokuapp.com/",
-        "host": "Heroku",
-        "type": "React App",
+        "deployment": {
+            "frontend": "heroku",
+            "backend": "heroku",
+            "database": "n/a"
+        },
+        "type": "Node.js App",
         "year": "2022",
         "technologies": ["HTML5","CSS3","Js6"],
         "description":"A React app built to practice SQL-injection techniques and protections.",
+        "restrictions":"",
         "status": "Beta",
         "repo": [{
             "title": "Progress",
