@@ -61,7 +61,10 @@ function changeSrc(loc) {
 }
 
 function toggleModal() {
-    modal.classList.toggle("show-modal");
+    modal.classList.toggle("show_modal");
+    if(modal.classList[show_modal]){
+        about_trigger.classList.toggle("about-move-back");
+    }
     // modal.setAttribute.visibility ='hidden'
     // infoButton.classList.toggle('show-infoButton')
     infoModal.classList.toggle("show-infoModal");
@@ -73,6 +76,7 @@ function toggleInfoModal() {
 }
 function toggleAbout() {
     aboutDiv.classList.toggle("show-about-div");
+    about_trigger.classList.toggle("about-move");
     console.log("Showing about ???")
 }
 
