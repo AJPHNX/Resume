@@ -1,6 +1,8 @@
 /* h1 { font-family: futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; } */
 
 body {
+    display: flex;
+    flex-direction: row;
     min-width: 950px;
     height: 80vh;
     font-family: futura;
@@ -302,6 +304,18 @@ body {
     /* clip-path: url("#blob3"); */
     /* clip-path: polygon(61% 0%, 21% 0%, 0% 0%, 0% 28%, 0% 100%, 25% 100%, 47% 100%, 67% 100%, 100% 0%, 100% 0%); */
 }
+.right-cloud{
+    position: absolute;
+    right:0px;
+    top:0px;
+    height: 100vh;
+    width: 20vw;
+    background: rgb(255,255,255);
+    background: linear-gradient(-450deg, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%);
+    z-index: 900;
+    /* border: 1px solid red; */
+
+}
 #cloud1 {
     position: absolute;
     top: 0px;
@@ -349,6 +363,7 @@ body {
     position: relative;
     top: 35px;
     padding-right: .5em;
+    z-index: 2000;
 }
 #email-link img{
     float: right;
@@ -479,22 +494,42 @@ body {
     /* padding-top: 2em; */
     border-top: .5px solid #868686;
 }
+#resume-wrap img{
+    height:100%;
+    width:auto;
+}
+.resume-back-filler{
+    position: relative;
+    /* right: 0px; */
+    width: 650px;
+    height: 100%;
+    background-color: #fff;
+    /* border: 2px dotted blue; */
+}
+.filler-left{
+    left: 0px;
+    width:300px;
+}
 #resume-wrap {
-    /* display: inline-flex; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
     /* position:fixed; */
     position:relative;
     /* z-index: 80; */
     /* border: 2px dotted blue; */
-    overflow: hidden;
-    width: 80vw;
-    height: auto;
+    overflow-X: scroll;
+    /* overflow-Y: hidden; */
+    width: 70vw;
+    height: 85vh;
     min-height: fit-content;
-    border-radius: 0px 40px 40px 40px;
+    border-radius: 40px 40px 0px 40px;
     /* right: 10px; */
     /* bottom: 10px; */
 }
 #resume-wrap :hover{
     z-index: 1000;
+    transition: 2s ease-in;
 }
 
 .modal-fx {
