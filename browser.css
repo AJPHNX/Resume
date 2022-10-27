@@ -73,6 +73,7 @@
     width: 150px;
     height: 2em;
     position: absolute;
+    top: 7px;
 }
 /* .x-btn-text:before{
     content:'x';
