@@ -69,6 +69,11 @@
     margin: 0;
     z-index: 910;
 }
+#browser-drag-tag{
+    width: 150px;
+    height: 2em;
+    position: absolute;
+}
 /* .x-btn-text:before{
     content:'x';
 } */
