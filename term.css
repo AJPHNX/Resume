@@ -14,7 +14,6 @@ body{
     z-index: 999;
 }
 .term-container{
-
     font-family: Monaco;
     position: absolute;
     right: 15px;
@@ -28,6 +27,8 @@ body{
     margin: auto;
     box-shadow: -5px 0px 10px 5px rgba(0, 0, 0, 0.322);
     z-index: 900;
+    /* opacity: 0;
+    visibility: hidden; */
 }
 .term-header{
     display: flex;
@@ -69,6 +70,7 @@ body{
     /* box-shadow: -6px 0px 5px -5px rgba(0, 0, 0, 0.498); */
     /* background-color: #d15858; */
 }
+
 .term-body-content p{
     padding: .5em;
     width: 95%;
@@ -78,6 +80,7 @@ body{
     text-indent: 2em;
     align-items: left;
 }
+
 /* .doc-combo{
    
   } */
@@ -92,7 +95,7 @@ body{
 .term-body{
     position: relative;
     width: 100%;
-    height: 100%; 
+    height: 95%; 
     background-color: #000;
     border-radius: 0px 0px 10px 10px;
     z-index: 1;
@@ -116,7 +119,7 @@ body{
     text-align: left;
     justify-content: center;
     width: 90%;
-    height: 100%;
+    height: 90%;
     padding: .5em;
     margin: auto;
 }
@@ -125,12 +128,37 @@ body{
     color: rgba(255, 243, 15, 0.957);
 }
 
+
 .term-poweredBy  {
     position: relative;
     display: flex;
     flex-direction: row;
     color: rgb(0, 255, 55);
-    bottom:0px;
+    background-color: #000;
+    width: 100%;
+    bottom: 0px;
     padding: .5em;
-    border-top: 1px solid rgb(0, 255, 55);
+    /* border-top: 1px solid rgb(0, 255, 55); */
+}
+.typing {
+    width: 35ch;
+    animation: typing 2s steps(35), blink2 .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    /* font-family: monospace; */
+    font-size: 1em;
+}
+@keyframes typing {
+    from {
+        width: 0
+    }
+    /* to{
+        width: 75%;
+    } */
+}
+@keyframes blink2 {
+    50% {
+        border-color: transparent
+    }
 }

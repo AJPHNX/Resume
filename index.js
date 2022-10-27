@@ -1,7 +1,7 @@
 
 // -----DOM Elements-------//
 const modal = document.querySelector(".modal-fx");
-const infoModal = document.querySelector(".termModal");
+const infoModal = document.querySelector(".term-container");
 const triggers = document.querySelectorAll(".trigger");
 
 const about_trigger = document.querySelector(".about-trigger");
@@ -31,7 +31,7 @@ let inspText = document.getElementById('inspiration')
 let impText = document.getElementById('implementation')
 let lessText = document.getElementById('lessons')
 
-// -----Globas --------//
+// -----Globals --------//
 let impArray = []
 let projects = []
 let currentInfo = {}
@@ -64,23 +64,25 @@ function changeSrc(loc) {
 
 function toggleModal() {
     modal.classList.toggle("show_modal");
+    toggleInfoModal()
     if(modal.classList["show_modal"]){
+        // infoModal.classList.toggle("show-termModal");
+        // toggleInfoModal()
         about_trigger.classList.toggle("about-move-back");
     }
     // modal.setAttribute.visibility ='hidden'
     // infoButton.classList.toggle('show-infoButton')
-    infoModal.classList.toggle("show-infoModal");
     
 }
 function toggleInfoModal() {
-    infoModal.classList.toggle("show-infoModal");
-    console.log("window modal???")
+    infoModal.classList.toggle("show-termModal");
+    console.log("term modal?")
 }
 function toggleAbout() {
     aboutDiv.classList.toggle("show-about-div");
     about_trigger.classList.toggle("about-move");
     about_trigger.classList.toggle("med_man_grow");
-    console.log("Showing about ???")
+    console.log("Showing about?")
 }
 
 function sel_mod_content(e){
@@ -253,7 +255,7 @@ about_trigger.addEventListener("mouseover",()=>{
     //about_trigger.textContent = 
 });
 closeButton.addEventListener("click", toggleModal);
-termCloseButton.addEventListener("click", toggleModal);
+// termCloseButton.addEventListener("click", toggleModal);
 termCloseButton.addEventListener("click", toggleInfoModal);
 infoButton.addEventListener("click",()=>{
     // toggleInfoModal();

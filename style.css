@@ -395,7 +395,7 @@ body {
 }
 .buttonSubText {
     font-size: .75em;
-    border-top: 2px solid #757575;
+    border-top: 2px solid #99989857;
     margin-top: .5em;
     margin: 01;
     width: 90%;
@@ -634,7 +634,10 @@ body {
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
-
+.show_termModal {
+    opacity: 1;
+    visibility: visible;
+}
 .frame-container {
     display: flex; 
     align-content: center;
@@ -691,6 +694,7 @@ body {
 }
 .blink3 {
 }
+
 
 @-moz-keyframes floater {  
     0%, 100% {
@@ -836,12 +840,7 @@ Info Modal
     color: #000;   
 }
 
-.show-infoModal {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
+
 .infoModalContent{
     /* transform: scale(.50); */
 }

@@ -63,7 +63,7 @@
         "restrictions":"",
         "status": "Beta",
         "repo": [{
-            "title": "Frontend",
+            "title": "Monorepo",
             "link":"https://github.com/AJPHNX/NDAer"}
             ],
         "info":{
