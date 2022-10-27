@@ -48,6 +48,17 @@
            <!------[HEADER]------->
             <div class= "header ">
                 <div  class=" about-trigger " id="about-link">
+                     
+                      <div class="static-block">
+                    <hr class="static static1"/>
+                    <hr class="static static2"/>
+                    <hr class="static static3"/>
+                </div>
+                <div class="static-block2">
+                    <!-- <hr class="static static1"/> -->
+                    <!-- <hr class="static static2"/> -->
+                    <!-- <hr class="static static3"/> -->
+                </div>
                         <span>
                         <img src="./assets/MedMan.png" alt="about" title="about">
                         </span> 
@@ -90,7 +101,9 @@
                         <!------[Folder Test]------->
                         <div class="folder-bottom"><span class="folder-lable">@ajphnx</span></div>
                         
+                        <div class="" id="nav-filler2">&nbsp;</div>
                         <button class="trigger" id="AJPHNX.com" value="0">AJPHNX.com<br/>&nbsp;
+                          
                             <div class="buttonSubText">(Landing Page)</div>
                         </button>
                         
@@ -133,8 +146,8 @@
             <!------[Browser modal]------->
             <div class="browser-modal modal-fx center">
                 <div class="modal-wrap">
-                    <div class="browser-container">
-                        <div class="browser-header">
+                    <div class="browser-container" id="browser">
+                        <div class="browser-header" id="browser-header">
                             <div class="browser-button-cls">
                                 <span class="x-btn-text blink">x</span>
                             </div>
@@ -144,7 +157,10 @@
                             </div>
                         </div>
                         <div class="browser-nav-bar">
-                   <div class="url-arrows"><span id="nav-left" class="nav-btn">←</span><span id="nav-right" class="nav-btn"> → </span><span id="nav-right"> @ </span></div>
+                            <div class="url-arrows">
+                                <span id="nav-left" class="nav-btn">←</span>
+                                <span id="nav-right" class="nav-btn"> → </span>
+                                <span  id="nav-refresh" class="nav-btn"> @ </span></div>
                    <div class="url-box">
                        <div class="infoTrigger infoButton blink" id="infoButton">
                            <img src="./assets/infoButton.png"  alt="info"> </img>
@@ -170,8 +186,8 @@
             <!-- <div class="term-modal"> -->
                 
             <!-- <div class="term-modal center"> -->
-            <div class="term-container">
-                <div class="term-header">
+            <div class="term-container" id="term">
+                <div class="term-header" id="term-header">
                     <div class="term-button-cls"><span class="x-btn-text blink">x</span></div>
                     <div class="term-title projName">
                         project name
@@ -240,6 +256,7 @@
 </div>
 </div>
 <script src="index.js"></script>
+<script src="drag.js"></script>
 </body>
 
 

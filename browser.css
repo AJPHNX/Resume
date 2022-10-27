@@ -222,7 +222,8 @@
     width: 100%;
     height: 100%;
     overflow: none;
-    background: url('./assets/Blue_loading_circle.gif') center center no-repeat;
+    background: url('./assets/loading-bar.gif') center center no-repeat;
+    /* background: url('./assets/Blue_loading_circle.gif') center center no-repeat; */
     border-radius: 0px 0px 10px 10px;
     border-bottom: none;
 }

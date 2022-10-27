@@ -9,6 +9,7 @@ const aboutDiv = document.querySelector(".about-div");
 const infoButton = document.getElementById("infoButton");
 const nav_left = document.getElementById("nav-left");
 const nav_right = document.getElementById("nav-right");
+const nav_refresh = document.getElementById("nav-refresh");
 const emailButton = document.getElementById("email-link");
 // const trigger2 = document.querySelectorAll(".trigger2");
 const closeButton = document.querySelector(".browser-button-cls");
@@ -43,7 +44,7 @@ const afterClassURL = "./assets/AfterClass_Mockup_05_alt_logo.png"
 
 function clearModal (id){
     // currentInfo = {}
-    document.getElementById('projectFrame').src = './assets/Blue_loading_cirlce.gif';
+    document.getElementById('projectFrame').src = './assets/loading-bar.gif';
 }
 
 function changeSrc(loc) {
@@ -62,7 +63,7 @@ function changeSrc(loc) {
 
 function toggleModal() {
     modal.classList.toggle("show_modal");
-    if(modal.classList[show_modal]){
+    if(modal.classList["show_modal"]){
         about_trigger.classList.toggle("about-move-back");
     }
     // modal.setAttribute.visibility ='hidden'
@@ -77,6 +78,7 @@ function toggleInfoModal() {
 function toggleAbout() {
     aboutDiv.classList.toggle("show-about-div");
     about_trigger.classList.toggle("about-move");
+    about_trigger.classList.toggle("med_man_grow");
     console.log("Showing about ???")
 }
 
@@ -148,7 +150,8 @@ function repoCheck(){
             }))
     } 
 function incNav(){
-    let id = currentInfo.id
+    let id = Number(currentInfo.id)
+    console.log(id)
     if(id >= projects.length-1){currentInfo = projects[0]}
     else{currentInfo = projects[id+1]}
     console.log("incNav currrentInfo:", currentInfo)
@@ -161,6 +164,10 @@ function decNav(){
     else{currentInfo = projects[id-1]}
     console.log("decNav currrentInfo:", currentInfo)
     changeSrc(currentInfo.url)
+    fillInfo(currentInfo.id);
+}
+function refresh(){
+    // changeSrc(currentInfo.url)
     fillInfo(currentInfo.id);
 }
 // Fill json info based on selected project button
@@ -234,6 +241,7 @@ infoButton.addEventListener("click",()=>{
 });
 nav_left.addEventListener("click", decNav);
 nav_right.addEventListener("click", incNav);
+nav_refresh.addEventListener("click", refresh);
 // window.addEventListener("load",fetchInfo)
 window.addEventListener("click", windowOnClick);
 window.addEventListener("click", fetchInfo);
