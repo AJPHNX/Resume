@@ -177,6 +177,30 @@
     background-color: #fff;
     cursor: pointer;
 }
+.show-browser-info-alert{
+    visibility: visible;
+}
+.browser-info-alert{
+    position: relative;
+    width: fit-content;
+    position: relative;
+    top: -15px;
+    left: 100px;
+    font-size:  .75em;
+    height: 25px;
+    padding: .25em 1em;
+    background-color: rgb(229, 226, 226);
+    border-radius: 40px;
+    z-index: 2000;
+    color:#000;
+    cursor: pointer;
+    visibility: hidden;
+    display: none;
+}
+.browser-info-alert:hover{
+    color:#fff;
+    background-color: rgb(199, 196, 196);
+}
 .browser-body{
     position: relative;
     width: 100%;

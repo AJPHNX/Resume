@@ -14,13 +14,14 @@ const emailButton = document.getElementById("email-link");
 // const trigger2 = document.querySelectorAll(".trigger2");
 const closeButton = document.querySelector(".browser-button-cls");
 const termCloseButton = document.querySelector(".term-button-cls");
-const infoCloseButton = document.querySelector(".infoClose-button");
+// const infoCloseButton = document.querySelector(".infoClose-button");
 
 // -----Project vars--------//
 let projName = document.querySelector('.projName')
 // let term_projName = document.querySelector('.term-projName')
 let browser_url = document.getElementById('browser-url')
 let browser_title = document.getElementById('browser-title')
+let browser_infoBtn = document.getElementById('infoButton')
 
 let projStatus = document.getElementById('status')
 let projDesc = document.getElementById('description')
@@ -126,13 +127,12 @@ function fillFrame(id){
 async function fetchInfo(){
     const response = await fetch('./assets/Projects.json')
     // const response = await fetch('https://github.com/AJPHNX/Resume/blob/main/assets/Projects.json')
-    
     const data = await response.json()
     projects = data.projects
     // clearImps(impText)
     // clearImps(projRepo)
-   
 }
+
 function clearImps(tar){ 
      tar.innerHTML = '';
      tar.textContent = '';
@@ -149,6 +149,27 @@ function repoCheck(){
                 // console.log(currentInfo.repo[repo].title)
             }))
     } 
+ 
+function checkKey(e) {
+    e = e || window.event;
+    switch (e.key) {
+        case "ArrowLeft":
+            console.log("ArrowLeft")
+            decNav()
+            break;
+            case "ArrowRight":
+                console.log("ArrowRight")
+                incNav()
+            break;
+        case "ArrowUp":
+            // Up pressed
+            break;
+        case "ArrowDown":
+            // Down pressed
+            break;
+    }
+
+}
 function incNav(){
     let id = Number(currentInfo.id)
     console.log(id)
@@ -198,7 +219,7 @@ function fillInfo(id){
         //! ----To Be Unbugged--------
         currentInfo.info.implementation.forEach((imp) => {
            impText.innerHTML += `<li>  ${imp}  </li>`;
-           console.log('imp:',imp)
+        //    console.log('imp:',imp)
         })
         //! ----To Be Unbugged--------
     }
@@ -233,15 +254,16 @@ about_trigger.addEventListener("mouseover",()=>{
 });
 closeButton.addEventListener("click", toggleModal);
 termCloseButton.addEventListener("click", toggleModal);
-// infoCloseButton.addEventListener("click", toggleInfoModal);
+termCloseButton.addEventListener("click", toggleInfoModal);
 infoButton.addEventListener("click",()=>{
     // toggleInfoModal();
-    fillInfo(current.id)
-    
+    fillInfo(current.id)  
 });
+document.onkeydown = checkKey;
 nav_left.addEventListener("click", decNav);
 nav_right.addEventListener("click", incNav);
 nav_refresh.addEventListener("click", refresh);
+browser_infoBtn.addEventListener("click", toggleInfoModal);
 // window.addEventListener("load",fetchInfo)
 window.addEventListener("click", windowOnClick);
 window.addEventListener("click", fetchInfo);

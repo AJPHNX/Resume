@@ -325,7 +325,7 @@ body {
     justify-content: center;
     top: 40px;
     left: 0px;
-    width: 100vw;
+    /* width: 100vw; */
     height: 100px;
     /* border: 1px solid red; */
     color: #868686;
@@ -338,7 +338,7 @@ body {
     justify-content: center;
     top: 40px;
     left: 0px;
-    width: 100vw;
+    /* width: 100vw; */
     height: 100px;
     /* border: 1px solid red; */
     color: #868686;
@@ -614,7 +614,7 @@ body {
     justify-content: center;
     margin: auto;
     border: none; */
-    opacity: .8;
+    opacity: 1;
     border-radius: 80% 80%;
     cursor: pointer;
     margin: 5px;
@@ -635,7 +635,6 @@ body {
     animation: blinker 2s linear infinite;
 }
 .blink3 {
-    animation: blinker 4s linear infinite;
 }
 
 @-moz-keyframes floater {  
