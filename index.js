@@ -58,6 +58,7 @@ function changeSrc(loc) {
     if(loc){
         document.getElementById('projectFrame').src = loc;
         console.log(`source changed to: ${loc}`)
+        browser_url.textContent = currentInfo.url
         // toggleModal();
     }
 }
@@ -179,6 +180,7 @@ function incNav(){
     else{currentInfo = projects[id+1]}
     console.log("incNav currrentInfo:", currentInfo)
     changeSrc(currentInfo.url)
+    fillFrame(currentInfo.id);
     fillInfo(currentInfo.id);
 }
 function decNav(){
@@ -187,6 +189,7 @@ function decNav(){
     else{currentInfo = projects[id-1]}
     console.log("decNav currrentInfo:", currentInfo)
     changeSrc(currentInfo.url)
+    fillFrame(currentInfo.id);
     fillInfo(currentInfo.id);
 }
 function refresh(){

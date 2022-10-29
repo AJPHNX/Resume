@@ -78,7 +78,7 @@
     {
         "id": "3" ,
         "name": "nVentory",
-        "url": "https://nventory-frontend.herokuapp.com/",
+        "url": "./assets/nVentory_Section_view_02.png",
         "deployment": {
             "frontend": "Heroku",
             "backend": "Heroku",
