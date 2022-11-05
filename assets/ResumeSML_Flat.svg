@@ -9,7 +9,7 @@
    id="svg970"
    sodipodi:docname="ResumeSML_Flat.svg"
    inkscape:version="1.2 (dc2aeda, 2022-05-15)"
-   inkscape:export-filename="ResumeSML_Flat_2pg.png"
+   inkscape:export-filename="ResumeSML_Flat.pdf"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -28,15 +28,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="in"
      showgrid="false"
-     inkscape:zoom="0.73347858"
-     inkscape:cx="1027.2965"
-     inkscape:cy="470.36139"
+     inkscape:zoom="0.66463384"
+     inkscape:cx="572.49568"
+     inkscape:cy="637.94525"
      inkscape:window-width="1667"
      inkscape:window-height="997"
-     inkscape:window-x="83"
+     inkscape:window-x="30"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg970"
+     inkscape:current-layer="g794"
      showguides="true">
     <inkscape:page
        x="0"
@@ -3033,8 +3033,15 @@
            height="16.006001"
            fill="#007600"
            stop-color="#000000"
-           style="paint-order:markers stroke fill"
+           style="paint-order:markers stroke fill;fill:#00ff00;fill-opacity:1"
            id="rect792" />
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:3.02362;paint-order:stroke fill markers;stop-color:#000000"
+           id="rect3020"
+           width="823.00952"
+           height="1062.239"
+           x="879.92706"
+           y="-93.506233" />
       </g>
     </g>
     <g
