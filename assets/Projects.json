@@ -67,12 +67,12 @@
             "link":"https://github.com/AJPHNX/NDAer"}
             ],
         "info":{
-           "inspiration":"",
+           "inspiration":"Initially conceived as a mini side-project to preface an upcoming final group project I had for bootcamp, the window shortened before being able to get the skeletal version up and running. Seeing the benefit of such a tool, I decided to pan out the functionality and features to make a more diverse full stack application. Because I wanted to, a.) more familiarize myself with the technologies I would be implementing in the future project, and b.) become aware of those areas of I could use some strengthening in general, I chose to go at it solo.",
            "implementation":[
-            "",
-            ""],
-           "lessons":"",
-           "reviews":""
+            "Establish a legal binding space for collaboration and/or consultation",
+            "tba"],
+           "lessons":"In general a better awareness of state managment and persistance. Deciding to pan out what was intended to be a short run/single use product gave me the opportunity to not only delve into the inital single document format but, it also provided me the chance to expand the scope of the MVP. Transitioning to the muti-document format allowed for me to practice implementing new additions and features to and already establish model.",
+           "reviews":"23/25"
         }
     },
     {
@@ -104,7 +104,7 @@
             "A visual bridge that allows the user to break their inventory up into personalized sections and subsections, allowing for a more manageable and streamlined inventory process and interaction.",
             "Allows shopify to stay on the computer/POS while you manage your inventory as it sits in your physical store via phone, tablet, or laptop."],
            "lessons":"A great experience with a strong team of 4(total) with a little under 2 weeks of class time, in our first collaborative effort/ full stack application. Throughout the project we implemented  AGILE/Scrum methodologies while holding true to our established MVP and adding possible  features in the allotted time. The main focus of our MVP was to ensure we were covering all the C.R.U.D. functionalities; rendering it fullstack, while still displaying some of the other intended features and functionalities of the user experience.",
-           "reviews":""
+           "reviews":"21/25"
         }
     },
     {   "id": "4" ,
@@ -132,7 +132,7 @@
                 "Away to kill some time making a bunch of sandwiches without...yah know…having to figure out what to do with them afterwards…A…low-impact sandwich construction outlet🤔🧐"
             ],
            "lessons":"Upon undertaking this project, I had the opportunity to explore and combine many of the learned skills from the first portion of my bootcamp up until Javascript. Although not complete(due to its ambitious nature for the time allotted), I still had the opportunity to utilize aspects of the AGILE process when coming to the point that it’d be more beneficial to refactor my code for the results I’m looking to achieve(which I am in the process of in between projects). After observing what data was needing to be handled and how, it became apparent that there was not just a dryer but more effective way to structure/handle the data and its interactions(state and effects)",
-           "reviews":""
+           "reviews":"25/25"
         }
     },
     {

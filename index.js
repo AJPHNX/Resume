@@ -221,6 +221,7 @@ function fillInfo(id){
     }else{
         // console.log(currentInfo.info.implementation)
         // impText.textContent = currentInfo.info.implementation
+        impText.textContent=""
         //! ----To Be Unbugged--------
         currentInfo.info.implementation.forEach((imp) => {
            impText.innerHTML += `<li>  ${imp}  </li>`;
