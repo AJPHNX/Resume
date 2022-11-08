@@ -58,7 +58,7 @@
         },
         "type": "Fullstack Mobile",
         "year": "2022",
-        "technologies": ["React","CSS3","passage.id","react-to-pdf","Axios","knex","Express","postgresQL"],
+        "technologies": ["React","CSS3","react-router-DOM","passage.id","react-to-pdf","html2canvas","Axios","knex","Node","Express","postgresQL"],
         "description":"Fullstack mobile browser-based application, created for generating and signing non-disclosure agreements on the fly",
         "restrictions":"",
         "status": "Beta",
