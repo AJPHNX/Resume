@@ -70,7 +70,7 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    cursor:pointer;
+    cursor: pointer;
     padding-left: .5em;
     padding-left: 1em;
     width: fit-content;
@@ -207,7 +207,7 @@ body {
     height: 100px;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 44%, rgba(255,255,255,0) 100%);
-
+    z-index: 100;
 }
 .body{
     position: relative;
@@ -492,7 +492,7 @@ body {
     position: relative;
     top: 35px;
     padding-right: .5em;
-    z-index: 2000;
+    z-index: 901;
 }
 #email-link img{
     float: right;

@@ -61,7 +61,7 @@
         "technologies": ["React","CSS3","react-router-DOM","passage.id","react-to-pdf","html2canvas","Axios","knex","Node","Express","postgresQL"],
         "description":"Fullstack mobile browser-based application, created for generating and signing non-disclosure agreements on the fly",
         "restrictions":"",
-        "status": "Beta",
+        "status": "Beta(redeploy pending)",
         "repo": [{
             "title": "Monorepo",
             "link":"https://github.com/AJPHNX/NDAer"}
@@ -89,7 +89,7 @@
         "technologies": ["React","CSS3","Axios","Express","postgresQL"],
         "description":"Fullstack PERN application utilizing microservices to handle front and back ends separately through an API/Mobile first design.",
         "restrictions":"",
-        "status": "Beta",
+        "status": "Beta(redeploy pending)",
         "repo": [{
             "title": "Frontend",
             "link":"https://github.com/kiqueangulo/nVentory-frontend/"},
