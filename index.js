@@ -27,6 +27,8 @@ let projStatus = document.getElementById('status')
 let projDesc = document.getElementById('description')
 let projRepo = document.getElementById('repo')
 let projHost = document.getElementById('deployment')
+let projFront = document.getElementById('frontend')
+let projBack = document.getElementById('backend')
 let inspText = document.getElementById('inspiration')
 let impText = document.getElementById('implementation')
 let lessText = document.getElementById('lessons')
@@ -211,9 +213,18 @@ function fillInfo(id){
 //    term_projName.textContent = currentInfo.name? `"${currentInfo.name}"`:"n/a"
     projStatus.textContent = currentInfo.status;
     projDesc.textContent = currentInfo.description;
-    let host_link = `<a href="${currentInfo.url}"target ="_blank">${currentInfo.deployment.frontend}</a>`
-    console.log("Fillinfo host_link:",host_link)
-    projHost.innerHTML = host_link;
+    let front_link ='n/a'
+    if(currentInfo.deployment.frontend){ front_link = `<a href="${currentInfo.url}"target ="_blank">${currentInfo.deployment.frontend}</a>`}
+    let back_link ='n/a'
+    if(currentInfo.deployment.backend){ back_link = `<a href="${currentInfo.url}"target ="_blank">${currentInfo.deployment.backend}</a>`}
+    console.log("Fillinfo host_link:",front_link)
+    // projHost.innerHTML = front_link;
+    let depl_HTML = `<blockquote></br>frontend<span id="frontend"> ${front_link}</span></br>backend<span id="backend"> ${back_link}</span></blockquote>`
+    
+    console.log("Fillinfo depl_HTML:",depl_HTML)
+
+    projHost.innerHTML = depl_HTML
+
     inspText.innerHTML = currentInfo.info.inspiration
     
     if(!currentInfo.info.implementation){
@@ -231,11 +242,14 @@ function fillInfo(id){
     }
     lessText.textContent = currentInfo.info.lessons
     let i = 0;
+    let comma = ``
+    projRepo.innerHTML = `` 
     currentInfo.repo.forEach(repo=>{
-        projRepo.innerHTML += ` <a href="${currentInfo.repo[i].link}"target="_blank"> ${currentInfo.repo[i].title} </a> ,`;
+        projRepo.innerHTML += ` <a href="${currentInfo.repo[i].link}"target="_blank"> ${currentInfo.repo[i].title} </a> ${comma}`;
         // console.log(projRepo.innerHTML)
         // console.log(currentInfo.repo[i],i)
         i++;
+        comma = `,`
         // console.log(currentInfo.repo[repo].title)
     });
       

@@ -34,11 +34,11 @@
         "type": "Landing Page",
         "year": "2021",
         "technologies": ["HTML5","CSS3","Js6"],
-        "description": "Temporary landing page for \"theNDAer\" QR",
+        "description": "Temporary static landing page (pun included) for \"theNDAer\" QR",
         "restrictions":"",
         "status": "Deployed",
         "repo": [{
-            "title": "n/a",
+            "title": "The NDAer Landing page",
             "link": "https://github.com/AJPHNX/NDAerLander"}],
         "info":{
            "inspiration":"",
