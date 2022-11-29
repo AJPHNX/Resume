@@ -78,7 +78,7 @@
     {
         "id": "3" ,
         "name": "nVentory",
-        "url": "./assets/nVentory_Section_view_02(850w).png",
+        "url": "https://www.youtube.com/embed/R3phVxbPRXA",
         "deployment": {
             "frontend": "Heroku",
             "backend": "Heroku",
