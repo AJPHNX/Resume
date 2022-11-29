@@ -265,14 +265,16 @@ body {
 /* } */
 #nav-container{
     /* display: flex; */
-    position: relative;
-    left: 0px;
-    top: 70px;
+    /* position: relative; */
+    /* left: 0px;
+    top: 70px; */
     /* width: 375px; */
     width: 100%;
-    height: 65%;
-    overflow-y: visible;
+    height: 50vh;
+    /* overflow-y: visible; */
     /* border: 1px solid blue; */
+    /* background-color: rgb(233, 222, 189);  */
+    margin-left: 1em;
 }
 .button-box {
     position: relative;
@@ -284,6 +286,8 @@ body {
     overflow-x: visible;
     /* justify-content: center; */
     /* align-items: center; */
+    background-image: url('assets/FolderBottom_Long.png');
+    background-repeat: no-repeat;
     top: 10vh;
     z-index: 700;
     height: 100%;
@@ -329,37 +333,48 @@ body {
     align-items: flex-start;
 }
 .folder{
-    position: absolute;
-    width: fit-content;
+    /* position: relative; */
+    width: 225px;
     height: 75vh;
-    padding: 1em;
+   
+    /* padding: 1em; */
 }
 .folder-bottom {
-    position: fixed;
-    top: 25vh;
-    left: 33px;
+    /* position: fixed; */
+    /* top: 25vh; */
+    /* left: 33px; */
     width: 225px;
     /* height:  100px; */
-    min-width: 200px;
-    min-height: 400px;
-    background-color: rgb(233, 222, 189);
+    min-width: 225px;
+    min-height: 160px;
+    /* background-image: url('assets/FolderBottom.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-color: rgb(233, 222, 189); */
+    /* clip-path: polygon(41% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 71%, 100% 15%, 51% 14%);
+    border-radius: 20px;  */
     z-index: 1;
-    clip-path: polygon(41% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 71%, 100% 15%, 51% 14%);
-    border-radius: 20px;
     /* box-shadow: -4px -1px 15px 5px rgba(96, 96, 96, 0.265); */
 }
 .folder-top {
+    display: flex;
     position: absolute;
     /* bottom: 50px; */
-    left: 30px;
+    left: 15px;
     width: 250px;
-    height: 250px;
-    background-color: rgb(255, 244, 206);
+    height: 255px;
+    background-image: url('assets/FolderTop.png');
+    background-repeat: no-repeat;
     z-index: 900;
+    /* background-color: rgb(255, 244, 206);
     clip-path: polygon(41% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 71%, 100% 15%, 51% 14%);
-    border-radius: 20px;
+    border-radius: 20px; */
     /* box-shadow: -4px -1px 15px 5px rgba(96, 96, 96, 0.265); */
     /* border: 1px solid blue; */
+}
+.folder-top img{
+    margin: auto;
+    justify-content: center;
+
 }
 /* .folder-top :hover{
     height:20px;
