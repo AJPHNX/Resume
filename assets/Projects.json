@@ -99,7 +99,7 @@
             }
             ],
         "info":{
-           "inspiration":"This application was thought of while working at a Shopify-based brick and mortar wine store which. The slow and sometimes distracted process of organizing the space available inspired AJ to build a cleaner and easier system for tracking inventory.",
+           "inspiration":"This application was thought of while working at a Shopify-based brick and mortar wine store where the slow and sometimes distracted process of organizing the space available inspired AJ to build a cleaner and easier system for tracking inventory.",
            "implementation":[
             "A visual bridge that allows the user to break their inventory up into personalized sections and subsections, allowing for a more manageable and streamlined inventory process and interaction.",
             "Allows shopify to stay on the computer/POS while you manage your inventory as it sits in your physical store via phone, tablet, or laptop."],
