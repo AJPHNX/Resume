@@ -52,9 +52,9 @@
         "name": "theNDAer",
         "url": "https://www.youtube.com/embed/dnK1TE6qxag",
         "deployment": {
-            "frontend": "EC2",
-            "backend": "EC2",
-            "database": "RDS"
+            "frontend": "Netlify",
+            "backend": "Render",
+            "database": "ElephantSQL"
         },
         "type": "Fullstack Mobile",
         "year": "2022",
