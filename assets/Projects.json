@@ -167,16 +167,16 @@
     {
         "id": "6",
         "name": "SQL-Injection-Punching-Bag",
-        "url": "https://sql-injection-punching-bag.herokuapp.com/",
+        "url": "https://si-punching-bag.netlify.app/",
         "deployment": {
-            "frontend": "heroku",
-            "backend": "heroku",
+            "frontend": "netlify",
+            "backend": "n/a",
             "database": "n/a"
         },
         "type": "Node.js App",
         "year": "2022",
         "technologies": ["HTML5","CSS3","Js6"],
-        "description":"A React app built to practice SQL-injection techniques and protections.",
+        "description":"A node app built to practice SQL-injection techniques and protections.",
         "restrictions":"",
         "status": "Beta",
         "repo": [{
