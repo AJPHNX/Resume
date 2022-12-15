@@ -1,12 +1,13 @@
 /* h1 { font-family: futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; } */
 
-body {
+#body {
     display: flex;
     flex-direction: row;
     min-width: 950px;
-    height: 80vh;
+    max-height: 80vh;
     font-family: futura;
     /* text-transform: lowercase; */
+    border: 2px solid rgb(255, 0, 0);
 }
 
 *{
@@ -22,7 +23,7 @@ body {
     top: 0px;
     width: 100vw;
     min-width: 950px;
-    height: auto;
+    max-height: 80vh;
     background-color:#fff;
 }
 #wrap {
@@ -76,7 +77,10 @@ body {
     padding-left: 1em;
     width: fit-content;
     height: fit-content;
+    z-index: 10;
+
 }
+
 .about-trigger h1{
     position: relative;
     top:50%;
@@ -122,8 +126,8 @@ body {
 .about-move-back {
     z-index: 1200;
     /* animation: about-click 2s; */
-    transform: translate(-200px,-75px);
     transition: 2s  ease-out;
+    transform: translate(-25px,-10px);
 
 }
 @keyframes about-click {
@@ -571,16 +575,13 @@ body {
     /* bottom: 10px; */
 }
 #resume-wrap :hover{
-    z-index: 1000;
+    z-index: 999;
     transition: 2s ease-in;
 }
 
 .modal-fx {
-    /* position: fixed; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    left: 0;
-    top: 0;
+    /* left: 0;
+    top: 0; */
     width: 100%;
     height: 100%;
     min-width: 950px;
@@ -591,10 +592,11 @@ body {
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
     /* z-index: 900; */
-    padding-top: 1em;
+    /* padding-top: 1em; */
     /* border: 2px dotted blue; */
     /* background: url('./assets/Blue_loading_circle.gif') center center no-repeat; */
 }
+
 .modalTop{
     background-color: #000;
     color: #fff;
@@ -650,16 +652,26 @@ body {
     color: #fff;
     
 }
-.show_modal {
+.show-modal {
     opacity: 1;
     visibility: visible;
     display: inherit;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
-.show_termModal {
+/* .show-termModal {
     opacity: 1;
     visibility: visible;
+    display: inherit;
+    transform: scale(1.0);
+    visibility: visible;
+} */
+.hide-termModal {
+    opacity: 0;
+    visibility: visible;
+    display: inherit;
+    /* transform: scale(1.0); */
+    visibility: hidden;
 }
 .frame-container {
     display: flex; 
@@ -673,7 +685,7 @@ body {
     z-index: 0;
 }
 
-.responsive-iframe {
+/* .responsive-iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -686,30 +698,31 @@ body {
     border-radius: 0px 40px 0px 40px;
     background-color: #fff;
     z-index: 0;
-}
+} */
 .infoButton{
     z-index: 999;
-    /* position: absolute;
-    right: 0px;
-    bottom: 0px;
-    justify-content: center;
-    margin: auto;
-    border: none; */
+    position: absolute; 
+    left: 5px;
+    top: 25px;
+    /* justify-content: center; */
+    /* margin: auto;
+    border: none;  */
     opacity: 1;
-    border-radius: 80% 80%;
+    /* border-radius: 80% 80%; */
     cursor: pointer;
-    margin: 5px;
+    /* margin: 5px; */
+    /* border: 1px solid red; */
 }
 
 .show-infoButton{
     visibility: visible;
 }
 .infoButton:hover {
-    opacity: .8;
+    opacity: .7;
     
 }   
 .infoButton img{
-    background-color: rgba(255, 255, 255, 0);
+    /* background-color: rgba(255, 255, 255, 0); */
     /* background-color: blue; */
 }
 .blink {
@@ -855,9 +868,12 @@ Info Modal
     width: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    margin: auto;
     border-radius: 80%;
-    padding: .25rem;
+    /* padding: .25rem; */
     color: #fff;
     background-color:#9f9f9f;
     border: 2px solid #868686;
@@ -866,7 +882,7 @@ Info Modal
 
 .infoClose-button:hover {
     border-color: #000;
-    background-color: #868686;
+    background-color: #5bdd5d;
     color: #000;   
 }
 

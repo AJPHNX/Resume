@@ -12,7 +12,7 @@
     <title>Resume</title>
     <meta name="pinterest" content="nopin" />
 </head>
-<body> 
+<body id ="body"> 
     <div class="about-div">
         <div class="about-div-content">
             <img src="./assets/SelfPortrait_Blink.gif" alt="about" title="about">
@@ -166,12 +166,12 @@
             <div class="blink3 right-cloud" id="cloud3">&nbsp;</div>
 
             <!------[Browser modal]------->
-            <div class="browser-modal modal-fx center">
+            <div class="browser-modal modal-fx center" id="browser-modal">
                 <div class="modal-wrap">
                     <div class="browser-container" id="browser">
                         <div class="browser-header" id="browser-header">
                             <div class="browser-button-cls">
-                                <span class="x-btn-text blink">x</span>
+                                <span class="x-btn-text blink" id="x-btn-text">x</span>
                             </div>
                             <span class="blink"id="browser-drag-tag">click up here to drag.</span> 
                             <img src="assets/denim.png" alt="denim texture" id="denim">
@@ -183,16 +183,18 @@
                             <div class="url-arrows">
                                 <span id="nav-left" class="nav-btn">←</span>
                                 <span id="nav-right" class="nav-btn"> → </span>
-                                <span  id="nav-refresh" class="nav-btn"> @ </span></div>
+                                <span  id="nav-refresh" class="nav-btn"> @ </span>
+                            </div>
                    <div class="url-box">
                        <div class="infoTrigger infoButton blink" id="infoButton">
                            <img src="./assets/infoButton.png"  alt="info"> </img>
+                           <div class="browser-info-alert" id="browser-info-alert">click to view site info</div>
                         </div>  <span id="browser-url">&nbsp;</span>
                     </div>
                 </div>
-                <div class="browser-info-alert">click to view site info</div>
-                <div class="browser-body">
+
                 
+                <div class="browser-body">
                     <div class="browser-body-content">
                         <span class="close-button"></span>
                         <div class="frame-container">
@@ -205,80 +207,83 @@
                 </div>
             </div>
             </div>
+            </div>
+            </div>
             <!------[Browser modal]------->
 
             <!------[Term modal]------->
             <!-- <div class="term-modal"> -->
                 
-            <!-- <div class="term-modal center"> -->
-            <div class="term-container" id="term">
-                <div class="term-header" id="term-header">
-                    <div class="term-button-cls"><span class="x-btn-text blink">x</span></div>
-                    <div class="term-title projName">
-                        project name
+            <div class="term-modal" id="term-modal">
+            <!-- <div class="term-modal-wrap">        -->
+                <div class="term-container" id="term">
+                    <div class="term-header" id="term-header">
+                        <div class="term-button-cls" id="term-button-cls"><span class="x-btn-text blink" id="x-btn-text">x</span></div>
+                        <div class="term-title projName">
+                            project name
+                        </div>
                     </div>
-
-                </div>
-                <div class="term-body">
-                      <div class="static-block">
-                    <hr class="static static1"/>
-                    <hr class="static static2"/>
-                    <hr class="static static3"/>
-                </div>
-                <div class="static-block2">
-                    <hr class="static static1"/>
-                    <hr class="static static2"/>
-                    <hr class="static static3"/>
-                </div>
-                    <div class="term-body-content">
-                        <!-- <div class="actualInfo" id ="actualInfo"> -->
-                            <!-- <span class="infoHeader proj-tag">about</span> -->
-                            <!-- <span  class="term-projName proj-tag"></span> -->
-                            <span class=" status proj-tag">ajphnx@ status/~% : </span>
-                            <span id="status"></span><br/>
-                            <br/>
-                                
-                            <span class="description proj-tag">ajphnx@ Description/~% :</span>
-                                <span id="description"></span>
+                    <div class="term-body">
+                        <div class="static-block">
+                        <hr class="static static1"/>
+                        <hr class="static static2"/>
+                        <hr class="static static3"/>
+                    </div>
+                    <div class="static-block2">
+                        <hr class="static static1"/>
+                        <hr class="static static2"/>
+                        <hr class="static static3"/>
+                    </div>
+                        <div class="term-body-content">
+                            <!-- <div class="actualInfo" id ="actualInfo"> -->
+                                <!-- <span class="infoHeader proj-tag">about</span> -->
+                                <!-- <span  class="term-projName proj-tag"></span> -->
+                                <span class=" status proj-tag">ajphnx@ status/~% : </span>
+                                <span id="status"></span><br/>
                                 <br/>
-                                <br/>
-                                <span class="hosting proj-tag">ajphnx@ Deployment/~% : <span id="deployment" class="proj-tag"></span></span>
-                                <!-- <br/>
-                                <br/> -->
-                                <span class="infoContent proj-tag">ajphnx@ Inspiration/~% :   
-                            </span>                             
-                            <span id="inspiration"></span>
-                            <br/>
-                            <br/>
-                            <span class="infoContent proj-tag">ajphnx@ Implementation(s)/~% :</span>
-                                <!-- <p > -->
-                                    <ol id="implementation"></ol> 
-                                <!-- </p> -->
-                                <br/>
-                                
-                                <span class="infoContent proj-tag"> ajphnx@ Lessons/~% :</span>
-                                <span id="lessons"> </span>
-                                <br/>
-                                <br/>
-                                <span class="repo proj-tag">
-                                    ajphnx@ Repo Link(s)/~% :</span>
-                                    <span id="repo"> </span>
                                     
+                                <span class="description proj-tag">ajphnx@ Description/~% :</span>
+                                    <span id="description"></span>
                                     <br/>
                                     <br/>
-                                    <hr />
-                                    <div class="term-poweredBy "><span class="typing">Powered by: <strong>The AJPHNX Projects API</strong>
-                                    </span></div>
-                                </div>
-                        </div>
+                                    <span class="hosting proj-tag">ajphnx@ Deployment/~% : <span id="deployment" class="proj-tag"></span></span>
+                                    <!-- <br/>
+                                    <br/> -->
+                                    <span class="infoContent proj-tag">ajphnx@ Inspiration/~% :   
+                                </span>                             
+                                <span id="inspiration"></span>
+                                <br/>
+                                <br/>
+                                <span class="infoContent proj-tag">ajphnx@ Implementation(s)/~% :</span>
+                                    <!-- <p > -->
+                                        <ol id="implementation"></ol> 
+                                    <!-- </p> -->
+                                    <br/>
+                                    
+                                    <span class="infoContent proj-tag"> ajphnx@ Lessons/~% :</span>
+                                    <span id="lessons"> </span>
+                                    <br/>
+                                    <br/>
+                                    <span class="repo proj-tag">
+                                        ajphnx@ Repo Link(s)/~% :</span>
+                                        <span id="repo"> </span>
+                                        
+                                        <br/>
+                                        <br/>
+                                        <hr />
+                                        <div class="term-poweredBy "><span class="typing">Powered by: <strong>The AJPHNX Projects API</strong>
+                                        </span></div>
+                                    </div>
+                            </div>
                         </div>
                 </div>
-                </div>
-         <!-- </div> -->
+            </div>
+            <!-- </div> -->
+        </div>
     
                
             <!------[Term modal]------->
-        </div>
+        <!-- </div> -->
     </div>
 </div>
 </div>

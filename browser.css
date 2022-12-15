@@ -34,6 +34,7 @@
     border: 1px solid #757575;
     /* z-index:960; */
     background-color: #fff;
+    overflow: hidden;
 
 }
 .browser-header{
@@ -152,6 +153,7 @@
     text-align: left;
     /* margin: 0 auto; */
     margin-top: 5px;
+    margin-left: 15px;
 }
 .url-arrows {
     display: flex;
@@ -173,48 +175,65 @@
     align-items: center;
     color: #757575;
 }
+.url-box img:hover{
+    background-color: rgb(255, 252, 104);
+    border: 2px solid rgb(255, 215, 38);
+
+}
 .url-box img{
     position: absolute;
-    top: 5px;
-    left: 10px;
+    top:  -21px;
+    left: 1px;
     width: 15px;
     height: auto;
-    opacity: 0.3;
-    background-color: #fff;
+    opacity: 1;
     cursor: pointer;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 2px solid rgb(100, 253, 17);
 }
 .show-browser-info-alert{
     visibility: visible;
+    opacity: 1;
+    display: inherit;
 }
 .browser-info-alert{
-    position: relative;
+    display: flex;
+    position: absolute;
     width: fit-content;
     position: relative;
-    top: -15px;
-    left: 100px;
+    align-items: center;
+    
+    top: 0px;
+    left: 0px;
     font-size:  .75em;
-    height: 25px;
+    height: 15px;
     padding: .25em 1em;
-    background-color: rgb(229, 226, 226);
-    border-radius: 40px;
-    z-index: 2000;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(111, 255, 0);
+    border-radius: 5px;
+    z-index: 3000;
     color:#000;
     cursor: pointer;
+    /* opacity: 0;
     visibility: hidden;
-    display: none;
+    display: none; */
 }
 .browser-info-alert:hover{
-    color:#fff;
-    background-color: rgb(199, 196, 196);
+    color:rgb(18, 18, 18);
+    background-color: rgba(115, 255, 87, 0.712);
 }
 .browser-body{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     width: 100%;
     height: 100%; 
     background-color: #fff;
     border-radius: 0px 0px 10px 10px;
     z-index: 1;
-    overflow: scroll;
+    overflow: hidden;
     /* padding: .5em; */
 }
 
@@ -233,12 +252,14 @@
     width: 100%;
     height: fit-content;
     padding: .5em;
+    margin: auto;
+    
 }
 .frame-container {
     display: flex; 
     align-content: center;
     justify-content: center;
-    width: 95vw;
+    width: 100vw;
     min-width: fit-content;
     min-height: fit-content;
     overflow: none;

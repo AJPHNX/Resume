@@ -1,11 +1,14 @@
 
 // -----DOM Elements-------//
-const modal = document.querySelector(".modal-fx");
-const infoModal = document.querySelector(".term-container");
+// const modal = document.querySelector(".modal-fx");
+const modal = document.getElementById("browser-modal");
+const infoModal = document.getElementById("term-modal");
 const triggers = document.querySelectorAll(".trigger");
 
 const about_trigger = document.querySelector(".about-trigger");
 const aboutDiv = document.querySelector(".about-div");
+
+const browserInfoAlert = document.getElementById("browser-info-alert");
 const infoButton = document.getElementById("infoButton");
 const nav_left = document.getElementById("nav-left");
 const nav_right = document.getElementById("nav-right");
@@ -13,7 +16,8 @@ const nav_refresh = document.getElementById("nav-refresh");
 const emailButton = document.getElementById("email-link");
 // const trigger2 = document.querySelectorAll(".trigger2");
 const closeButton = document.querySelector(".browser-button-cls");
-const termCloseButton = document.querySelector(".term-button-cls");
+const termCloseButton = document.getElementById("term-button-cls");
+// const termCloseButton = document.getElementById("x-btn-text");
 // const infoCloseButton = document.querySelector(".infoClose-button");
 
 // -----Project vars--------//
@@ -37,6 +41,7 @@ let lessText = document.getElementById('lessons')
 let impArray = []
 let projects = []
 let currentInfo = {}
+let infoOpen = false
 // const frameContent = document.querySelector("")
 
 
@@ -66,20 +71,34 @@ function changeSrc(loc) {
 }
 
 function toggleModal() {
-    modal.classList.toggle("show_modal");
-    toggleInfoModal()
-    if(modal.classList["show_modal"]){
+    modal.classList.toggle("show-modal");
+    if(modal.classList.contains("show-modal")){
+        toggleInfoModal()
+      
         // infoModal.classList.toggle("show-termModal");
         // toggleInfoModal()
-        about_trigger.classList.toggle("about-move-back");
+        // about_trigger.classList.toggle("about-move-back");
     }
     // modal.setAttribute.visibility ='hidden'
     // infoButton.classList.toggle('show-infoButton')
     
 }
 function toggleInfoModal() {
-    infoModal.classList.toggle("show-termModal");
-    console.log("term modal?")
+    // infoModal.classList.toggle("show-termModal");
+    console.log("term modal?",infoModal)
+    console.log("[toggleInfoModal]: infoModal.classList", infoModal.classList)
+    if(modal.classList.contains("show-modal")){
+        infoModal.classList.toggle("show-termModal");
+        infoOpen = true
+    }else{infoOpen = false
+        
+        // browserInfoAlert.classList.toggle("show-browser-info-alert");
+        console.log("browserInfoAlert.classList",browserInfoAlert.classList)
+    }
+    // if(infoModal.classList.contains("show-termModal")){
+    //    infoOpen = true
+    // }else{infoOpen = false}
+
 }
 function toggleAbout() {
     aboutDiv.classList.toggle("show-about-div");
@@ -274,16 +293,21 @@ about_trigger.addEventListener("mouseover",()=>{
 });
 closeButton.addEventListener("click", toggleModal);
 // termCloseButton.addEventListener("click", toggleModal);
-termCloseButton.addEventListener("click", toggleInfoModal);
+termCloseButton.addEventListener("click", ()=>{toggleInfoModal()});
 infoButton.addEventListener("click",()=>{
-    // toggleInfoModal();
-    fillInfo(current.id)  
+    fillInfo(currentInfo.id)  
+    toggleInfoModal();
 });
+// browser_infoBtn.addEventListener("click",()=>{
+//     fillInfo(currentInfo.id)  
+//     toggleInfoModal();
+// });
 document.onkeydown = checkKey;
 nav_left.addEventListener("click", decNav);
 nav_right.addEventListener("click", incNav);
 nav_refresh.addEventListener("click", refresh);
-browser_infoBtn.addEventListener("click", toggleInfoModal);
+// browser_infoBtn.addEventListener("click", toggleInfoModal);
+
 // window.addEventListener("load",fetchInfo)
 window.addEventListener("click", windowOnClick);
 window.addEventListener("click", fetchInfo);
