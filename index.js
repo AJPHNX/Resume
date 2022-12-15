@@ -91,7 +91,7 @@ function toggleInfoModal() {
         infoModal.classList.toggle("show-termModal");
         infoOpen = true
     }else{infoOpen = false
-        
+        infoModal.classList.toggle("show-termModal");
         // browserInfoAlert.classList.toggle("show-browser-info-alert");
         console.log("browserInfoAlert.classList",browserInfoAlert.classList)
     }
