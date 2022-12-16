@@ -28,6 +28,7 @@ let browser_title = document.getElementById('browser-title')
 let browser_infoBtn = document.getElementById('infoButton')
 
 let projStatus = document.getElementById('status')
+let projTech = document.getElementById('technologies')
 let projDesc = document.getElementById('description')
 let projRepo = document.getElementById('repo')
 let projHost = document.getElementById('deployment')
@@ -231,14 +232,31 @@ function fillInfo(id){
     projName.textContent = currentInfo.name? `"${currentInfo.name}"`:"n/a"
 //    term_projName.textContent = currentInfo.name? `"${currentInfo.name}"`:"n/a"
     projStatus.textContent = currentInfo.status;
+    projTech.textContent = currentInfo.technologies;
+
     projDesc.textContent = currentInfo.description;
+
     let front_link ='n/a'
-    if(currentInfo.deployment.frontend){ front_link = `<a href="${currentInfo.url}"target ="_blank">${currentInfo.deployment.frontend}</a>`}
     let back_link ='n/a'
+    let db_link ='n/a'
+
+    if(currentInfo.deployment.frontend){ front_link = `<a href="${currentInfo.url}"target ="_blank">${currentInfo.deployment.frontend}</a>`}
     if(currentInfo.deployment.backend){ back_link = `<a href="${currentInfo.url}"target ="_blank">${currentInfo.deployment.backend}</a>`}
+    if(currentInfo.deployment.database){ db_link = `<a href="${currentInfo.url}"target ="_blank">${currentInfo.deployment.database}</a>`}
     console.log("Fillinfo host_link:",front_link)
     // projHost.innerHTML = front_link;
-    let depl_HTML = `<blockquote></br>frontend<span id="frontend"> ${front_link}</span></br>backend<span id="backend"> ${back_link}</span></blockquote>`
+    let depl_HTML = `<blockquote>
+        frontend
+        <span id="frontend"> 
+            ${front_link}
+         </span>
+        </br>
+        backend
+        <span id="backend">
+            ${back_link}
+         </span>
+        </br>
+        database<span id="database"> ${db_link}</span></blockquote>`
     
     console.log("Fillinfo depl_HTML:",depl_HTML)
 
