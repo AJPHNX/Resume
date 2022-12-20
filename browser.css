@@ -260,10 +260,15 @@
     align-content: center;
     justify-content: center;
     width: 100vw;
+    margin: auto;
     min-width: fit-content;
     min-height: fit-content;
-    overflow: none;
+    overflow: hidden;
 }
+/* .projectFrame img{
+    Width: 50%;
+    height: auto;
+} */
 .responsive-iframe {
     position: absolute;
     top: 0;
@@ -273,11 +278,17 @@
     width: 100%;
     height: 100%;
     overflow: none;
-    background: url('./assets/loading-bar.gif') center center no-repeat;
+    /* background: url('./assets/loading-bar.gif') center center no-repeat; */
     /* background: url('./assets/Blue_loading_circle.gif') center center no-repeat; */
     border-radius: 0px 0px 10px 10px;
     border-bottom: none;
+    /* display:flex; */
+    /* justify-content: center; */
+    /* border: 1px solid red; */
 }
+/* .responsive-iframe img{
+    justify-content: center;
+} */
 iframe{
     padding: .5px;
 }

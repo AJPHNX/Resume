@@ -56,6 +56,7 @@ function clearModal (id){
     document.getElementById('projectFrame').src = './assets/loading-bar.gif';
 }
 
+
 function changeSrc(loc) {
     // if(projRepo){
         clearImps(projRepo)

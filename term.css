@@ -12,7 +12,8 @@ body{
     width: 600px;
     height: 450px;
     right: 15px;
-    bottom: 1em;
+    bottom: 0;
+    /* bottom: 1em; */
     z-index: 1999;
     opacity: 0;
     display: none;
