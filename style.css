@@ -1,4 +1,10 @@
 /* h1 { font-family: futura, "Trebuchet MS", Arial, sans-serif; font-size: 46px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; } */
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy-Light"),
+     url("./fonts/Gilroy-FREE/Gilroy-Light.otf") format("truetype");
+    font-weight: light;
+    }
 
 #body {
     display: flex;
@@ -36,7 +42,7 @@
     position: relative;
     display: flex;
     text-align: center;
-    border: 5px ridge #868686;
+    border: 5px ridge #ffb300;
     border-radius: 10px 10px;
     width: 5vw;
     height: 40vh;
@@ -60,10 +66,45 @@
     transition: all .3s ease-in-out;
     opacity: 0;
     transform: translateY(-100%);
-    background-color: #4c4c4cf4;
+    /* background-color: #4c4c4cf4; */
+    background: rgb(19,150,255);
+background: linear-gradient(216deg, rgba(19,150,255,1) 0%, rgba(173,96,20,1) 22%, rgba(189,92,92,1) 51%, rgba(255,150,45,1) 81%, rgba(49,231,255,1) 99%);
     color: rgb(255, 255, 255);
     box-shadow: -3px -3px 18px 7px #FFF67B;    
+    
 }
+.color-grad-blue-border {
+    -webkit-animation: color-bl-wt 5s ease-in-out infinite;
+    animation: color-bl-wt 5s ease-in-out infinite;
+}
+.color-grad-yellow-border {
+    -webkit-animation: color-yl-wt 5s ease-in-out infinite;
+    animation: color-mlt-cmykg 5s ease-in-out infinite;
+}
+.color-grad-mult-inner {
+    
+    -webkit-animation: color-yl-wt 5s ease-in-out infinite;
+    animation: color-mlt-in 5s ease-in-out infinite;
+}
+@keyframes color-bl-wt{  
+    0%,100% { border-color: #6CA2F9; }
+    50% { border-color: #ffffff;  }
+  }
+@keyframes color-mlt-cmykg{  
+    0% { border-color: #00FFFF;  }
+    25% { border-color: #FF00FF;  }
+    50%{ border-color: #FFFF00; }
+    75% { border-color: #ffffff;  }
+    100% { border-color:#00FF00; }
+  }
+@keyframes color-mlt-in{  
+    0% {border-color: #00FFFF;  box-shadow:inset 0px 0px 10px 4px  #00FFFF;  }
+    25% { border-color: #FF00FF; box-shadow:inset 0px 0px 10px 2px  #FF00FF;  }
+    50%{ border-color:#FFFF00;;  box-shadow:inset 0px 0px 10px 3px  #FFFF00; }
+    75% { border-color: #FFFF00; box-shadow:inset 0px 0px 10px 2px  #ffffff;  }
+    100% { border-color:#00FF00;box-shadow:inset 0px 0px 10px 1px #00FF00; }
+  }
+
 .about-trigger{
     position: relative;
     left: 60px;
@@ -139,21 +180,46 @@
 
 }
 
-.about-div-content {
-    position: relative;
+.about-content{
     display: flex;
+    /* position: relative; */
+    /* width: 50%; */
+    /* border: 1px solid red; */
+    overflow: hidden;
+    overflow-y: scroll;
+     /* padding */
+}
+#about-content-left{
+   justify-content: center;
+    width: 40%;
+    min-width: 75px;
+}
+#about-content-right{
+    font-family: Gilroy;
+    padding: 1em;
+    width: 50%;   
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.574);
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.526);
+    border: 2px solid #fff;
+}
+.about-div-content-wrap {
+    display: flex;
+    flex-direction: row;
+    position: relative;
     margin: auto;
-    width: 80%;
-    height: 90%;
+    width: 100%;
+    height: 95%;
     align-content: center;
     text-align: center;
+    justify-content: space-evenly
     /* border: 2px dotted blue; */
 }
-.about-div-content img{
+#about-div-content-left img{
     position: relative;
     display: flex;
     margin: auto;
-    width: 150px;
+    width: 75px;
     height: auto;
     /* border-radius: 100% 100%; */
     /* background-color: rgb(96, 227, 253); */
