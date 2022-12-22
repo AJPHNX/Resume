@@ -71,8 +71,26 @@
 background: linear-gradient(216deg, rgba(19,150,255,1) 0%, rgba(173,96,20,1) 22%, rgba(189,92,92,1) 51%, rgba(255,150,45,1) 81%, rgba(49,231,255,1) 99%);
     color: rgb(255, 255, 255);
     box-shadow: -3px -3px 18px 7px #FFF67B;    
-    
 }
+/* .about-div{
+    -webkit-animation: about-bg-morph 5s ease-in-out infinite;
+    animation: about-bg-morph 5s ease-in-out infinite;
+} */
+/* 
+#about-bg-morph{
+    transition: 25s ease-in-out;
+    -webkit-animation: about-bg-morph 10s ease-in infinite;
+    animation: about-bg-morph 10s ease-in infinite;
+}
+#about-bg-morph::after{
+    
+    transition: opacity  ;
+} */
+@keyframes about-bg-morph {
+    0%,100%{background: linear-gradient(216deg, rgba(19,150,255,1) 0%, rgba(173,96,20,1) 22%, rgba(189,92,92,1) 51%, rgba(255,150,45,1) 81%, rgba(49,231,255,1) 99%);}
+    50%{background: rgb(19,150,255);background: linear-gradient(216deg, rgba(231,255,45,1) 1%, rgba(49,231,255,1) 18%, rgba(125,173,20,1) 45%, rgba(189,92,92,1) 51%, rgba(19,150,255,1) 64%);}
+    75%{background: rgb(19,150,255);background: linear-gradient(216deg, rgb(19, 255, 58) 0%, rgb(20, 81, 173) 22%, rgb(166, 189, 92) 51%, rgba(255, 45, 209, 0.61) 81%, rgb(241, 255, 49) 99%);}
+} 
 .color-grad-blue-border {
     -webkit-animation: color-bl-wt 5s ease-in-out infinite;
     animation: color-bl-wt 5s ease-in-out infinite;
@@ -1189,6 +1207,56 @@ li{
       opacity: .0;
     }
   } */
+  /* --------Footer -------*/
+  .footer{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: none;
+    bottom: 0px;
+    left: 0;
+    /* right:0; */
+    height: 50px;
+    width: 100vw;
+    padding-top: 1em;
+    /* padding-right: 1em; */
+    white-space: nowrap;
+    /* margin: auto -.5em; */
+    z-index: 3000;
+    overflow: none;
+   background: rgb(255,255,255);
+      background: linear-gradient(0deg, rgba(255,255,255,1) 44%, rgba(255,255,255,0) 100%);
+  }
+  .bottom-right{
+    position: relative;
+    /* bottom: 0px;
+    right: 0px; */
+    white-space: nowrap;
+    padding: .5em;
+  }
+  .bottom-center{
+    position: relative;
+    /* bottom: 0px;
+    left: 50vw; */
+    white-space: nowrap;
+    padding: .5em;
+  }
+  .bottom-left{
+    position: relative;
+    /* bottom: 0px;
+    left: 0px; */
+    white-space: nowrap;
+    padding: .5em;
+  }
+  .footer span {
+    display: inline-block;
+  }
+  .flip-h {
+    transform: scale(-1, 1);
+  }
+  /* --------Footer -------*/
   @keyframes color-bounce1{
     0%,100%{
       border: 1px solid #fff;
