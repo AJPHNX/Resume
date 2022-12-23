@@ -6,7 +6,9 @@ const infoModal = document.getElementById("term-modal");
 const triggers = document.querySelectorAll(".trigger");
 
 const about_trigger = document.querySelector(".about-trigger");
+const contact_trigger = document.querySelector(".contact-trigger");
 const aboutDiv = document.querySelector(".about-div");
+const contactModal = document.querySelector(".contact-modal");
 
 const browserInfoAlert = document.getElementById("browser-info-alert");
 const infoButton = document.getElementById("infoButton");
@@ -107,6 +109,10 @@ function toggleAbout() {
     about_trigger.classList.toggle("about-move");
     about_trigger.classList.toggle("med_man_grow");
     console.log("Showing about?")
+}
+function toggleContact() {
+    contactModal.classList.toggle("show-contact-modal");
+    console.log("Showing contact modal?")
 }
 
 function sel_mod_content(e){
@@ -307,6 +313,7 @@ triggers.forEach(trigger =>{
 
 // 
 about_trigger.addEventListener("click", toggleAbout);
+contact_trigger.addEventListener("click", toggleContact);
 about_trigger.addEventListener("mouseover",()=>{
     //about_trigger.textContent = 
 });

@@ -477,7 +477,7 @@ background: linear-gradient(216deg, rgba(19,150,255,1) 0%, rgba(173,96,20,1) 22%
 .nav button{
     position: relative;
     padding: .25em;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 8px 8px 8px 8px;
     background-color: #fff;
     /* border: 2px solid #868686;  */
     width: 200px;
@@ -1335,6 +1335,73 @@ li{
       opacity: .0;
     }
   } */
+
+  /* -------- contact-modal -------*/
+  .contact-modal{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5000;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #757575;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 20px;
+    margin: auto;
+    /* visibility: hidden;
+    display: none; */
+    right: 159px;
+    top: 54px;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    overflow: scroll;
+    /* ------- */
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    /* background-color: #c2efee; */
+    transform: translate(120%,-100%);
+        background: rgb(255, 255, 255);
+background: linear-gradient(216deg, rgba(19, 149, 255, 0.349) 0%, rgba(227, 123, 19, 0.445) 22%, rgba(189,92,92,1) 51%, rgba(255,150,45,1) 81%, rgba(49,231,255,1) 99%);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 18px 3px #6e6e65;   
+  }
+
+  .show-contact-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  }
+  input[type ="email"],[type ="text"]{
+    height: 1.7em;
+    border-radius: 0 5px ;
+  }
+  .contact-modal textarea{
+    border-radius: 0 5px ;
+  }
+  .show-contact-modal  button{
+    position: relative;
+    border-radius: 0 5px ;
+    left: 130px;
+    background-color:#c8fefe; 
+    padding: .5em;
+    margin: 0;
+  }
+
+.contact-trigger{
+  position: relative;
+  cursor:  pointer;
+  height: 2em; 
+  margin: 0;
+}
+.contact-trigger img{
+  height: 1.5em; 
+
+}
+  /* -------- contact-modal -------*/
+
+
+
   /* --------Footer -------*/
   .footer{
     position: fixed;
