@@ -10,6 +10,9 @@ document.addEventListener('click',(e)=>{
     if (element.id == 'term-header'){
             dragElement(document.getElementById("term"));
     }
+    if (element.id == 'contact-header'){
+            dragElement(document.getElementById("contact-modal"));
+    }
 })
 
 // dragElement(document.querySelector("browser"));

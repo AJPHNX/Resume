@@ -682,12 +682,14 @@ background: linear-gradient(216deg, rgba(19,150,255,1) 0%, rgba(173,96,20,1) 22%
     z-index: 901;
     cursor: pointer;
     opacity: 0.5;
+    
 }
 #email-link img{
     float: right;
     padding-right: 10px;
     width: 40px;
     height: auto; 
+    
 }
 #email-link:hover {
     /* opacity: 0.5; */
@@ -1343,7 +1345,7 @@ li{
     position: absolute;
     z-index: 5000;
     width: 200px;
-    height: 300px;
+    height: 350px;
     border: 1px solid #757575;
     justify-content: center;
     align-items: center;
@@ -1379,24 +1381,87 @@ background: linear-gradient(216deg, rgba(19, 149, 255, 0.349) 0%, rgba(227, 123,
   .contact-modal textarea{
     border-radius: 0 5px ;
   }
+  .contact-header{
+    display: flex;
+    position: absolute;
+    top: 0;
+    height: 25px;
+    width: 100%;
+    background-color: #ffaa00;
+    box-shadow: 0px -1px 2px 2px #9a989880;
+    cursor: pointer;
+  }
+  #contact-header-text{
+    position: relative;
+    margin: auto;
+    font-size: .9em;
+    font-family: Gilroy;
+    color:rgb(105, 102, 102);
+    /* text-align: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  .contact-close{
+    display: flex;
+    position: absolute;
+    right: .6em;
+    top: .35em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: .15em .15em;
+    background-color: rgb(255, 93, 93);
+    color: rgb(66, 63, 63);
+    border-radius: 40px 40px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 1px #4c4c4c6c;
+    z-index: 5050;
+    font-family: futura bold;
+  }
+  .form-wrap{
+    display: flex;
+    position: relative;
+    top: 15px;
+  }
+  .contact-close:hover{
+    color: #fff;
+    background-color: rgb(215, 45, 45);
+    box-shadow: 0px 0px 5px 5px #e9e5e556;
+
+  }
   .show-contact-modal  button{
     position: relative;
     border-radius: 0 5px ;
     left: 130px;
-    background-color:#c8fefe; 
+    background-color:#f8fec8; 
     padding: .5em;
     margin: 0;
   }
 
+.contact-trigger:hover {
+  background-color: #51ff00c2;
+  border: 3px solid #11ff00;
+  box-shadow: 0px 0px 2px 2px #ffffff;
+}
 .contact-trigger{
+  display: flex;
   position: relative;
   cursor:  pointer;
-  height: 2em; 
   margin: 0;
+  /* height: 1.5em; */
+  width: auto;
+  height: 2em; 
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+ 
 }
 .contact-trigger img{
   height: 1.5em; 
-
+  width: 2em; 
+  /* box-shadow: inset 0px 0px 5px 5px #ffffffed; */
 }
   /* -------- contact-modal -------*/
 

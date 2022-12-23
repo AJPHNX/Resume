@@ -7,6 +7,7 @@ const triggers = document.querySelectorAll(".trigger");
 
 const about_trigger = document.querySelector(".about-trigger");
 const contact_trigger = document.querySelector(".contact-trigger");
+const contact_close = document.querySelector(".contact-close");
 const aboutDiv = document.querySelector(".about-div");
 const contactModal = document.querySelector(".contact-modal");
 
@@ -314,6 +315,7 @@ triggers.forEach(trigger =>{
 // 
 about_trigger.addEventListener("click", toggleAbout);
 contact_trigger.addEventListener("click", toggleContact);
+contact_close.addEventListener("click", toggleContact);
 about_trigger.addEventListener("mouseover",()=>{
     //about_trigger.textContent = 
 });
