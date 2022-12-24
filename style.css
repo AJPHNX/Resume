@@ -477,7 +477,7 @@ background: linear-gradient(216deg, rgba(19,150,255,1) 0%, rgba(173,96,20,1) 22%
 .nav button{
     position: relative;
     padding: .25em;
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 0px 8px;
     background-color: #fff;
     /* border: 2px solid #868686;  */
     width: 200px;
@@ -1366,6 +1366,9 @@ li{
 background: linear-gradient(216deg, rgba(19, 149, 255, 0.349) 0%, rgba(227, 123, 19, 0.445) 22%, rgba(189,92,92,1) 51%, rgba(255,150,45,1) 81%, rgba(49,231,255,1) 99%);
     color: rgb(255, 255, 255);
     box-shadow: 0px 0px 18px 3px #6e6e65;   
+    border: 2px solid #000;
+    border-top: none;
+    border-left: none;
   }
 
   .show-contact-modal {
@@ -1447,7 +1450,7 @@ background: linear-gradient(216deg, rgba(19, 149, 255, 0.349) 0%, rgba(227, 123,
 }
 .contact-trigger{
   display: flex;
-  position: relative;
+  position: absolute;
   cursor:  pointer;
   margin: 0;
   /* height: 1.5em; */
