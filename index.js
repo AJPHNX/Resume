@@ -108,9 +108,10 @@ function toggleInfoModal() {
 }
 function toggleAbout() {
     aboutModal.classList.toggle("show-about-modal");
-    aboutDiv.classList.toggle("show-about-div");
+    about_trigger.classList.toggle("center");
     about_trigger.classList.toggle("about-move");
     about_trigger.classList.toggle("med_man_grow");
+    aboutDiv.classList.toggle("show-about-div");
     console.log("Showing about?")
 }
 function toggleContact() {
