@@ -107,7 +107,7 @@ function toggleInfoModal() {
 
 }
 function toggleAbout() {
-    aboutModal.classList.toggle("show-modal");
+    aboutModal.classList.toggle("show-about-modal");
     aboutDiv.classList.toggle("show-about-div");
     about_trigger.classList.toggle("about-move");
     about_trigger.classList.toggle("med_man_grow");
