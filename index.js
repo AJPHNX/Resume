@@ -9,6 +9,7 @@ const about_trigger = document.querySelector(".about-trigger");
 const contact_trigger = document.querySelector(".contact-trigger");
 const contact_close = document.querySelector(".contact-close");
 const aboutDiv = document.querySelector(".about-div");
+const aboutModal = document.querySelector(".about-modal");
 const contactModal = document.querySelector(".contact-modal");
 
 const browserInfoAlert = document.getElementById("browser-info-alert");
@@ -106,6 +107,7 @@ function toggleInfoModal() {
 
 }
 function toggleAbout() {
+    aboutModal.classList.toggle("show-modal");
     aboutDiv.classList.toggle("show-about-div");
     about_trigger.classList.toggle("about-move");
     about_trigger.classList.toggle("med_man_grow");
