@@ -294,11 +294,16 @@ color: rgb(255, 255, 255);
 .about-content{
     display: flex;
     /* position: relative; */
-    /* width: 50%; */
+    width: 50%;
     /* border: 1px solid red; */
     overflow: hidden;
     overflow-y: scroll;
      /* padding */
+     align-items: center;
+}
+#about-content-left img{
+  width: 85%;
+  height: auto;
 }
 #about-content-left{
    justify-content: center;
@@ -1506,6 +1511,8 @@ color: rgb(255, 255, 255);
   position: absolute;
   cursor:  pointer;
   margin: 0;
+  top: 1%;
+  leftt: 1%;
   /* height: 1.5em; */
   width: auto;
   height: 2em; 

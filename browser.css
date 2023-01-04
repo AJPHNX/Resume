@@ -51,6 +51,7 @@
     align-content: center;
     justify-content: center;
     cursor: pointer;
+    white-space: nowrap;
 }
 .browser-button-cls{
     display: flex;
