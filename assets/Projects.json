@@ -221,29 +221,29 @@
         }
     },
     {
-        "id": "",
-        "name": "",
-        "url": "",
+        "id": "8",
+        "name": "Townhall",
+        "url": "https://www.youtube.com/embed/TjuxrInmJws",
         "deployment": {
-            "frontend": "netlify",
+            "frontend": "n/a",
             "backend": "n/a",
             "database": "n/a"
         },
-        "type": "Node.js App",
+        "type": "React App",
         "year": "2022",
-        "technologies": ["HTML5","CSS3","Js6"],
-        "description":"A node app built to practice SQL-injection techniques and protections.",
+        "technologies": ["React","Passage.io","100ms","mongoDB"],
+        "description":"",
         "restrictions":"",
         "status": "Beta",
         "repo": [{
-            "title": "Progress",
-            "link":"https://github.com/AJPHNX/SQL-Injection-Activity"}
+            "title": "",
+            "link":""}
             ],
         "info":{
-           "inspiration":"I've always had an interest in cyber security and wanted a space to play around with what im learning.",
+           "inspiration":"",
            "implementation":[
-            "Practice",
-            "Build out features to grow with my understandings"],
+            "",
+            ""],
            "lessons":"",
            "reviews":""
         }
