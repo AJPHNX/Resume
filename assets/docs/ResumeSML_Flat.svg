@@ -28,13 +28,13 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="in"
      showgrid="false"
-     inkscape:zoom="0.51965586"
-     inkscape:cx="1428.8302"
-     inkscape:cy="355.04266"
+     inkscape:zoom="1.1318996"
+     inkscape:cx="677.1802"
+     inkscape:cy="337.92749"
      inkscape:window-width="1667"
      inkscape:window-height="876"
      inkscape:window-x="50"
-     inkscape:window-y="54"
+     inkscape:window-y="26"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg970"
      showguides="true">
@@ -3386,7 +3386,8 @@
     <g
        aria-label="Administrative Assistant"
        id="text946"
-       style="font-weight:500">
+       style="font-weight:500"
+       transform="translate(0,16)">
       <path
          d="m 420.65235,232.82486 h -4.30328 l -1.11976,2.44134 h -1.63408 l 4.97384,-10.68332 4.79806,10.68332 h -1.66012 z m -0.61847,-1.42575 -1.49085,-3.41788 -1.56246,3.41788 z"
          id="path4862" />
@@ -3537,7 +3538,7 @@
        aria-label="Assoc. Junior Developer"
        id="text958"
        style="font-weight:500"
-       transform="translate(-42.99372)">
+       transform="translate(-42.99372,-16)">
       <path
          d="m 461.10056,241.21437 v 6.50375 q 0,1.16533 -0.16276,1.73823 -0.16275,0.65103 -0.55337,1.10024 -0.7617,0.8919 -2.01818,0.8919 -0.9505,0 -1.7773,-0.49478 l 0.74217,-1.29554 q 0.55337,0.37109 1.03513,0.37109 0.67707,0 0.93748,-0.51431 0.27343,-0.51431 0.27343,-1.79683 v -6.50375 z"
          id="path5057" />
@@ -3656,7 +3657,7 @@
        x="983.39319"
        y="151.51543"
        id="tspan6357"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;font-family:Futura;-inkscape-font-specification:'Futura, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000">Full Metal Workshop - Administrative Assistant / Junior Developer <tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;font-family:Futura;-inkscape-font-specification:'Futura, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000">Full Metal Workshop -  Junior Developer / Administrative Assistant / <tspan
    style="font-weight:normal;fill:#000000"
    id="tspan11950">| NY,NY |</tspan> <tspan
    style="font-weight:normal;fill:#000000"
@@ -3845,7 +3846,7 @@
        style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:12px;font-family:Futura;-inkscape-font-specification:'Futura, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000"
        id="tspan1489"><tspan
          style="font-weight:bold;fill:#000000"
-         id="tspan1491"></tspan></tspan><tspan
+         id="tspan1491" /></tspan><tspan
        sodipodi:role="line"
        x="983.39319"
        y="677.3996"
