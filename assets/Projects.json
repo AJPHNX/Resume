@@ -23,6 +23,7 @@
            "reviews":""
         }
     },
+   
     {   "id": "1" , 
         "name": "theNDAer qr landing page",
         "url": "https://ajphnx.github.io/NDAerLander/",
@@ -192,30 +193,26 @@
            "reviews":""
         }
     },
-    {
-        "id": "7",
-        "name": "Innerware",
-        "url": "./assets/shirts.html",
+    {   "id": "7" ,
+        "name": "AJPHNX Parallax",
+        "url": "https://ajphnx.github.io/apparelParallax/",
         "deployment": {
-            "frontend": "n/a",
+            "frontend": "GitHub pages",
             "backend": "n/a",
             "database": "n/a"
         },
-        "type": "Digital Illustration",
-        "year": "2018/2019",
-        "technologies": ["Adobe Illustrator"],
-        "description":"t-shirts & apparel",
+        "type": "Parallax",
+        "year": "2021",
+        "technologies": ["HTML5","CSS3"],
+        "description": "Apparrel Parallax",
         "restrictions":"",
-        "status": "Beta",
+        "status": "Deployed",
         "repo": [{
-            "title": "",
-            "link":""}
-            ],
+            "title": "N/A",
+            "link":"N/A"}],
         "info":{
            "inspiration":"",
-           "implementation":[
-            "",
-            ""],
+           "implementation":[],
            "lessons":"",
            "reviews":""
         }
