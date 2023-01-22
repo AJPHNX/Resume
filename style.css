@@ -52,7 +52,7 @@
     height: 40vh;
     max-width: 600px;
     max-height: 400px;
-    min-width: 50vw;
+    min-width: 500px;
     min-height: 40vh;
     margin: auto;
     visibility: hidden;
@@ -332,12 +332,15 @@ color: rgb(255, 255, 255);
     overflow-y: scroll;
 }
 .right-content p{
-
+  margin: auto;
+  width: 300px;
+}
+.right-content {
   position: relative;
-  
   margin-top: 40%;
   overflow: none;
   overflow-y: scroll;
+ 
   min-width: 400px;
   padding: 1em;
 
@@ -391,6 +394,44 @@ color: rgb(255, 255, 255);
     width: 150px;
     height: auto;
 } */
+#postIt {
+  position: absolute;
+  transform: rotate(7deg);
+  right: 0%;
+  top: 10%;
+  width: 300px ;
+  height: auto;
+  /* background-image: url('/assets/Postit.png') ; */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-attachment: fixed;
+     /* background-position: center; */
+  z-index: 4000;
+  overflow: none;
+  overflow-y: scroll;
+}
+#currentInfo u{
+  color: red;
+}
+#currentInfo{
+  font-size: 10pt;
+  position: absolute;
+  transform: rotate(350deg);
+  right: 22%;
+  top: 2%;
+  width: 200px;
+  z-index: 4001;
+  color:rgb(16, 27, 96);
+  transition: visibility 1s ease-in;
+}
+
+#postIt img{
+ 
+  width: 300px ;
+  height: auto;
+  opacity: 0.85;
+}
+
 #statement {
     display: flex;
     position: relative;
@@ -879,28 +920,28 @@ color: rgb(255, 255, 255);
   position: absolute;
     opacity: 0;
     visibility: hidden;
-    display: none; 
+    /* display: none;  */
     width: 100vw;
     height: 100vh;
     top: 0px;
     left: 0px;
     z-index:999;
     background-color: rgba(0, 0, 0, 0.457);
-    /* transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; */
+    transition: visibility .2s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 .show-modal {
     opacity: 1;
     visibility: visible;
     display: inherit;
     transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility .2s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 .show-about-modal {
     opacity: 1;
     visibility: visible;
     display: inherit;
     transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility .2s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 /* .show-termModal {
     opacity: 1;
