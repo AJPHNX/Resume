@@ -204,7 +204,7 @@
         "type": "Parallax",
         "year": "2021",
         "technologies": ["HTML5","CSS3"],
-        "description": "Apparrel Parallax",
+        "description": "A parallax site of some t-shirts and apparrel I illustrated and designed.",
         "restrictions":"",
         "status": "Deployed",
         "repo": [{
