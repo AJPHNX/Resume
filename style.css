@@ -414,7 +414,7 @@ color: rgb(255, 255, 255);
   color: red;
 }
 #currentInfo{
-  font-size: 10pt;
+  font-size: 9pt;
   position: absolute;
   transform: rotate(350deg);
   right: 22%;
@@ -481,6 +481,7 @@ color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     width: 100vw;
+    min-width: 950px;
     height: 100vh;
     /* border: 1px solid blue; */
     
@@ -833,6 +834,7 @@ color: rgb(255, 255, 255);
     /* overflow-Y: hidden; */
     width: 70vw;
     height: 85vh;
+    min-width: 500px;
     min-height: 85vh;
     border-radius: 20px 20px 0px 0px;
     /* right: 10px; */
@@ -1625,7 +1627,8 @@ color: rgb(255, 255, 255);
     left: 0;
     /* right:0; */
     height: 50px;
-    width: 100vw;
+    width: 100%;
+    min-width: 100vw;
     padding-top: 1em;
     /* padding-right: 1em; */
     white-space: nowrap;
