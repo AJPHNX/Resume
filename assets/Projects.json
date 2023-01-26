@@ -244,5 +244,33 @@
            "lessons":"",
            "reviews":""
         }
+    },
+    {
+        "id": "9",
+        "name": "Previous Work",
+        "url": "https://ajphnx.wordpress.com/portfolio-2/",
+        "deployment": {
+            "frontend": "Wordpress",
+            "backend": "n/a",
+            "database": "n/a"
+        },
+        "type": "React App",
+        "year": "",
+        "technologies": ["Adobe Creative Suite"],
+        "description":"A collection of some previous design works ",
+        "restrictions":"",
+        "status": "Beta",
+        "repo": [{
+            "title": "",
+            "link":""}
+            ],
+        "info":{
+           "inspiration":"",
+           "implementation":[
+            "",
+            ""],
+           "lessons":"",
+           "reviews":""
+        }
     }
 ]}
