@@ -442,7 +442,8 @@ color: rgb(255, 255, 255);
     justify-content: center;
     align-content: center;
     text-align: center;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    /* font-family: Futura, "Trebuchet MS", Arial, sans-serif; */
+    font-family: Gilroy;
     font-size: 1em;
     color: #5a5959;
     /* border-bottom: 1px solid #5a5959; */
@@ -465,6 +466,9 @@ color: rgb(255, 255, 255);
     overflow-y: none;
     /* border-radius: 0px 40px 0px 40px; */
     /* box-shadow: inset 2px 2px 10px 2px #242527; */
+}
+#statement h4{
+  font-family: Gilroy;
 }
 .header{
     display: flex;
