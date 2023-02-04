@@ -54,9 +54,16 @@ const SubEarthURL = 'https://ajphnx.github.io/SubEarth/'
 const nVentoryURL = "https://nventory-frontend.herokuapp.com/"
 const afterClassURL = "./assets/AfterClass_Mockup_05_alt_logo.png"
 
+const navOrder = [10,7,8,9,0,1,2,3,4,5,6]
+let navPos = 0//= navOrder.indexOf(currentInfo.id)
+// let curNavPos = Number(0)
+let nextNavId //= navOrder[navPos+1]
+let prevNavId //= navOrder[navPos-1]
 
+// const navOrder = ['10','7','8','9','0','1','2','3','4','5','6']
 function clearModal (id){
     // currentInfo = {}
+    //TODO---Add Loading.html instead to center it
     document.getElementById('projectFrame').src = './assets/loading-bar.gif';
 }
 
@@ -104,7 +111,6 @@ function toggleInfoModal() {
     // if(infoModal.classList.contains("show-termModal")){
     //    infoOpen = true
     // }else{infoOpen = false}
-
 }
 function toggleAbout() {
     aboutModal.classList.toggle("show-about-modal");
@@ -153,10 +159,12 @@ function fillFrame(id){
             project.id == id
             )
         })
+        curNavPos = Number(navOrder.indexOf(Number(currentInfo.id)))
         changeSrc(currentInfo.url)
         browser_url.textContent = currentInfo.url
         browser_title.innerHTML = currentInfo.name
         fillInfo(currentInfo.id);
+        console.log("fillFrame curNavPos:", curNavPos)
         console.log("fillFrame id:",currentInfo.id)
 }
 //Fetch info from Json file
@@ -207,36 +215,67 @@ function checkKey(e) {
 
 }
 function incNav(){
-    let id = Number(currentInfo.id)
-    console.log(id)
-    if(id >= projects.length-1){currentInfo = projects[0]}
-    else{currentInfo = projects[id+1]}
-    console.log("incNav currrentInfo:", currentInfo)
+    let info
+    navPos = navOrder.indexOf(Number(currentInfo.id))
+    if( navPos >= projects.length-1){
+        info = projects.filter(project => {
+        return project.id == navOrder[0]
+      })
+      currentInfo = info[0]
+      nextNavId = navOrder[1]
+    }
+    else{        
+        nextNavId = navOrder[(Number(navPos)+1)]
+        info = projects.filter(project => {
+        return project.id == nextNavId
+      })
+       currentInfo = info[0]
+    }
     changeSrc(currentInfo.url)
     fillFrame(currentInfo.id);
     fillInfo(currentInfo.id);
 }
+
 function decNav(){
-    let id = currentInfo.id
-    if(id < 1){currentInfo = projects[projects.length-1]}
-    else{currentInfo = projects[id-1]}
-    console.log("decNav currrentInfo:", currentInfo)
+    navPos = navOrder.indexOf(Number(currentInfo.id))
+    if(navPos < 1){
+        info = projects.filter( project => {
+            return project.id == navOrder[projects.length-1]
+          })
+        currentInfo = info[0]
+        navPos = navOrder[projects.length-1]
+        prevNavId = navOrder[projects.length-1]
+    }
+    else{ 
+        navPos -= 1
+        prevNavId = navOrder[navPos]
+        info = projects.filter( project => {
+            return project.id == Number(prevNavId)
+          })
+           currentInfo = info[0] 
+    }
     changeSrc(currentInfo.url)
     fillFrame(currentInfo.id);
     fillInfo(currentInfo.id);
 }
 function refresh(){
     // changeSrc(currentInfo.url)
+    clearModal();
+    changeSrc(currentInfo.url)
     fillInfo(currentInfo.id);
 }
+
 // Fill json info based on selected project button
 function fillInfo(id){
+    
    currentInfo = projects.find(project =>{
         return (
             project.id == id
             )
         })
-    console.log("fillInfo currentInfo:", currentInfo)
+    navPos = navOrder.indexOf(currentInfo.id)
+    // navPos = navOrder.indexOf(currentInfo.id)
+    // console.log("fillInfo currentInfo:", currentInfo)
     console.log("fillInfo currentInfo.name:", currentInfo.name)
 
         
@@ -269,7 +308,7 @@ function fillInfo(id){
         </br>
         database<span id="database"> ${db_link}</span></blockquote>`
     
-    console.log("Fillinfo depl_HTML:",depl_HTML)
+    // console.log("Fillinfo depl_HTML:",depl_HTML)
 
     projHost.innerHTML = depl_HTML
 
@@ -311,6 +350,7 @@ triggers.forEach(trigger =>{
     clearModal ('projectFrame');
     fillFrame(id);
     fillInfo(id);
+    // navPos = navOrder.indexOf(id)
     toggleModal()
     });
 });

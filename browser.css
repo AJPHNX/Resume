@@ -268,6 +268,10 @@
     min-height: fit-content;
     overflow: hidden;
 }
+ .projectFrame img{
+    margin: auto;
+
+  }
 /* .projectFrame img{
     Width: 50%;
     height: auto;
@@ -295,6 +299,7 @@
 iframe{
     padding: .5px;
 }
+
 .bottom-adr{
     display: flex;
     flex-direction: row;
