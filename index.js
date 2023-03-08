@@ -355,6 +355,7 @@ triggers.forEach(trigger =>{
     });
 });
 
+
 // 
 about_trigger.addEventListener("click", toggleAbout);
 contact_trigger.addEventListener("click", toggleContact);

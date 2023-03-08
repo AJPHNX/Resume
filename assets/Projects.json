@@ -275,19 +275,19 @@
     },
     {
         "id": "10",
-        "name": "Rex Entropy LLC",
-        "url": "https://rexentropyllc.github.io/LandingPage/",
+        "name": "RexEntropy.com",
+        "url": "https://rexentropy.com",
         "deployment": {
-            "frontend": "Github pages for now",
-            "backend": "n/a",
+            "frontend": "Wordpress",
+            "backend": "Wordpress",
             "database": "n/a"
         },
         "type": "Landing Page",
         "year": "",
-        "technologies": ["HTML,CSS, Js6"],
-        "description":"Potential headless WordPress site for the creative solutions firm Rex Entropy",
+        "technologies": ["HTML,CSS"],
+        "description":"WordPress site for the creative solutions firm Rex Entropy",
         "restrictions":"",
-        "status": "In progress",
+        "status": "Hosted",
         "repo": [{
             "title": "",
             "link":""}
