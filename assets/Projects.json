@@ -2,6 +2,7 @@
     {   "id": "0" ,
         "name": "AJPHNX.com",
         "url": "https://ajphnx.com/index.html",
+        "icon_url":"https://res.cloudinary.com/dzxzdsnha/image/upload/v1682641476/b7ufhxhtzbfaoqdph2qe.png",
         "deployment": {
             "frontend": "Blue Host",
             "backend": "n/a",
@@ -27,6 +28,7 @@
     {   "id": "1" , 
         "name": "theNDAer qr landing page",
         "url": "https://ajphnx.github.io/NDAerLander/",
+        "icon_url":"https://res.cloudinary.com/dzxzdsnha/image/upload/v1683078079/n3x7g2tqsxxsmd0czoow.png",
         "deployment": {
             "frontend": "Github Pages",
             "backend": "n/a",
@@ -52,12 +54,13 @@
         "id": "2" ,
         "name": "theNDAer",
         "url": "https://www.youtube.com/embed/dnK1TE6qxag",
+        "icon_url":"https://res.cloudinary.com/dzxzdsnha/image/upload/v1683078079/n3x7g2tqsxxsmd0czoow.png",
         "deployment": {
             "frontend": "Netlify",
             "backend": "Render",
             "database": "ElephantSQL"
         },
-        "type": "Fullstack Mobile",
+        "type": "Fullstack Web (mobile first)",
         "year": "2022",
         "technologies": ["React","CSS3","react-router-DOM","passage.id","react-to-pdf","html2canvas","Axios","knex","Node","Express","postgresQL"],
         "description":"Fullstack mobile browser-based application, created for generating and signing non-disclosure agreements on the fly",
@@ -80,6 +83,7 @@
         "id": "3" ,
         "name": "nVentory",
         "url": "https://www.youtube.com/embed/R3phVxbPRXA",
+        "icon_url":"https://res.cloudinary.com/dzxzdsnha/image/upload/v1682641476/b7ufhxhtzbfaoqdph2qe.png",
         "deployment": {
             "frontend": "Heroku",
             "backend": "Heroku",
@@ -111,6 +115,7 @@
     {   "id": "4" ,
         "name": "subEarth",
         "url": "https://ajphnx.github.io/SubEarth/",
+        "icon_url":"https://res.cloudinary.com/dzxzdsnha/image/upload/v1682641476/b7ufhxhtzbfaoqdph2qe.png",
         "deployment": {
             "frontend": "GitHub Pages",
             "backend": "n/a",
@@ -140,6 +145,7 @@
         "id": "5" ,
         "name": "afterClass",
         "url": "./assets/afterclass.html",
+        "icon_url":"https://res.cloudinary.com/dzxzdsnha/image/upload/v1682641476/b7ufhxhtzbfaoqdph2qe.png",
         "deployment": {
             "frontend": "n/a",
             "backend": "n/a",
@@ -169,6 +175,7 @@
         "id": "6",
         "name": "SQL-Injection-Punching-Bag",
         "url": "https://si-punching-bag.netlify.app/",
+        "icon_url":"https://res.cloudinary.com/dzxzdsnha/image/upload/v1682641476/b7ufhxhtzbfaoqdph2qe.png",
         "deployment": {
             "frontend": "netlify",
             "backend": "n/a",
@@ -196,6 +203,7 @@
     {   "id": "7" ,
         "name": "AJPHNX Parallax",
         "url": "https://ajphnx.github.io/apparelParallax/",
+        "icon_url":"https://res.cloudinary.com/dzxzdsnha/image/upload/v1682641476/b7ufhxhtzbfaoqdph2qe.png",
         "deployment": {
             "frontend": "GitHub pages",
             "backend": "n/a",
@@ -221,15 +229,16 @@
         "id": "8",
         "name": "Townhall",
         "url": "https://www.youtube.com/embed/TjuxrInmJws",
+        "icon_url":"https://res.cloudinary.com/dzxzdsnha/image/upload/v1683078079/n3x7g2tqsxxsmd0czoow.png",
         "deployment": {
             "frontend": "n/a",
             "backend": "n/a",
             "database": "n/a"
         },
         "type": "React App",
-        "year": "2022",
-        "technologies": ["React","Passage.io","100ms","mongoDB"],
-        "description":"",
+        "year": "2023",
+        "technologies": ["React","Passage.id","100ms","mongoDB"],
+        "description":"A suite of micro-services created to facilitate the collaborative and sharing process for those looking to expand.",
         "restrictions":"",
         "status": "Beta",
         "repo": [{
@@ -249,6 +258,7 @@
         "id": "9",
         "name": "Previous Work",
         "url": "https://ajphnx.wordpress.com/portfolio-2/",
+        "icon_url":"https://res.cloudinary.com/dzxzdsnha/image/upload/v1682641476/b7ufhxhtzbfaoqdph2qe.png",
         "deployment": {
             "frontend": "Wordpress",
             "backend": "n/a",
@@ -277,13 +287,14 @@
         "id": "10",
         "name": "RexEntropy.com",
         "url": "https://rexentropy.com",
+        "icon_url":"https://res.cloudinary.com/dzxzdsnha/image/upload/v1683078079/n3x7g2tqsxxsmd0czoow.png",
         "deployment": {
             "frontend": "Wordpress",
             "backend": "Wordpress",
             "database": "n/a"
         },
         "type": "Landing Page",
-        "year": "",
+        "year": "2023",
         "technologies": ["HTML,CSS"],
         "description":"WordPress site for the creative solutions firm Rex Entropy",
         "restrictions":"",
@@ -291,6 +302,35 @@
         "repo": [{
             "title": "",
             "link":""}
+            ],
+        "info":{
+           "inspiration":"",
+           "implementation":[
+            "",
+            ""],
+           "lessons":"",
+           "reviews":""
+        }
+    },
+    {
+        "id": "11",
+        "name": "TinCan",
+        "url": "https://tin-can-app.netlify.app/",
+        "icon_url":"https://res.cloudinary.com/dzxzdsnha/image/upload/v1683078079/n3x7g2tqsxxsmd0czoow.png",
+        "deployment": {
+            "frontend": "Netlify",
+            "backend": "Render",
+            "database": "MongoDb-Atlas"
+        },
+        "type": "Mobile first Web Application",
+        "year": "2023",
+        "technologies": ["MongoDb, Express, React, Node, ChakraUI, Axios, Socket.io"],
+        "description":"An end-to-end encrypted chat application created with an api-first approach, designed as a micro-service to be leveraged within a suite of other micro-services. Releasing through creative solutions firm Rex Entropy",
+        "restrictions":"",
+        "status": "Beta (in developement)",
+        "repo": [{
+            "title": "",
+            "link": ""}
             ],
         "info":{
            "inspiration":"",

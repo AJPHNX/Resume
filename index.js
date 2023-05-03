@@ -41,6 +41,8 @@ let projBack = document.getElementById('backend')
 let inspText = document.getElementById('inspiration')
 let impText = document.getElementById('implementation')
 let lessText = document.getElementById('lessons')
+let t_f_yearText = document.getElementById('term-footer-year')
+let b_f_yearText = document.getElementById('browser-footer-year')
 
 // -----Globals --------//
 let impArray = []
@@ -54,7 +56,7 @@ const SubEarthURL = 'https://ajphnx.github.io/SubEarth/'
 const nVentoryURL = "https://nventory-frontend.herokuapp.com/"
 const afterClassURL = "./assets/AfterClass_Mockup_05_alt_logo.png"
 
-const navOrder = [10,7,8,9,0,1,2,3,4,5,6]
+const navOrder = [10,11,7,8,9,0,1,2,3,4,5,6]
 let navPos = 0//= navOrder.indexOf(currentInfo.id)
 // let curNavPos = Number(0)
 let nextNavId //= navOrder[navPos+1]
@@ -85,15 +87,8 @@ function changeSrc(loc) {
 
 function toggleModal() {
     modal.classList.toggle("show-modal");
-    if(modal.classList.contains("show-modal")){
-        toggleInfoModal()
-      
-        // infoModal.classList.toggle("show-termModal");
-        // toggleInfoModal()
-        // about_trigger.classList.toggle("about-move-back");
-    }
-    // modal.setAttribute.visibility ='hidden'
-    // infoButton.classList.toggle('show-infoButton')
+    if(modal.classList.contains("show-modal")){ toggleInfoModal()}
+
     
 }
 function toggleInfoModal() {
@@ -108,9 +103,7 @@ function toggleInfoModal() {
         // browserInfoAlert.classList.toggle("show-browser-info-alert");
         console.log("browserInfoAlert.classList",browserInfoAlert.classList)
     }
-    // if(infoModal.classList.contains("show-termModal")){
-    //    infoOpen = true
-    // }else{infoOpen = false}
+ 
 }
 function toggleAbout() {
     aboutModal.classList.toggle("show-about-modal");
@@ -162,7 +155,7 @@ function fillFrame(id){
         curNavPos = Number(navOrder.indexOf(Number(currentInfo.id)))
         changeSrc(currentInfo.url)
         browser_url.textContent = currentInfo.url
-        browser_title.innerHTML = currentInfo.name
+        browser_title.innerHTML = `<span><img src="${currentInfo.icon_url}" id="browser-favicon"> &nbsp;${currentInfo.name}</span>`
         fillInfo(currentInfo.id);
         console.log("fillFrame curNavPos:", curNavPos)
         console.log("fillFrame id:",currentInfo.id)
@@ -327,7 +320,12 @@ function fillInfo(id){
         })
         //! ----To Be Unbugged--------
     }
+
+    let CRString = `© ${currentInfo.year} ${((Number(currentInfo.year)< 2023))? 'AJPHNX': 'RexEntropy LLC'}`
     lessText.textContent = currentInfo.info.lessons
+    t_f_yearText.textContent = CRString
+    b_f_yearText.textContent = CRString
+
     let i = 0;
     let comma = ``
     projRepo.innerHTML = `` 
